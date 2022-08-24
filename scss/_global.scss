@@ -15,6 +15,7 @@ body {
 .container {
     margin: 0 auto;
     padding: 0 15px;
+    width: 100%;
     max-width: 1582px;
 }
 
@@ -127,5 +128,48 @@ h5 {
     p {
         height: 15px;
         line-height: 1;
+    }
+}
+
+.preview {
+    position: relative;
+
+    .container {
+        position: absolute;
+        left: 50%;
+        bottom: 120px;
+        transform: translateX(-50%);
+    }
+
+    img {
+        height: 440px;
+        object-fit: cover;
+    }
+}
+
+.send-form {
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 48px;
+        background-color: #324541;
+    }
+
+    h2 {
+        margin-bottom: 16px;
+    }
+
+    &__text {
+        max-width: 545px;
+    }
+
+    input {
+        margin-bottom: 38px;
+        width: 100%;
+        border-top: none;
+        border-right: none;
+        border-bottom: 1px solid #5e857a;
+        border-left: none;
+        background-color: transparent;
     }
 }
