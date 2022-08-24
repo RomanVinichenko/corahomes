@@ -3,6 +3,13 @@
     left: 0;
     right: 0;
     top: 0;
+    z-index: 20;
+    background-color: transparent;
+    transition: all 0.3s;
+
+    &--active {
+        background-color: #324541;
+    }
 }
 
 .menu {

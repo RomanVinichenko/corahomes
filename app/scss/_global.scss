@@ -18,6 +18,55 @@ body {
     max-width: 1582px;
 }
 
+h1 {
+    font-family: Causten-600, sans-serif;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 1.2;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    color: #ededed;
+}
+
+h2 {
+    font-family: Causten-600, sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.2;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    color: #ededed;
+}
+
+h3 {
+    font-family: Causten-600, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ededed;
+}
+
+h4 {
+    font-family: Causten-700, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.015em;
+    color: #ededed;
+}
+
+h5 {
+    font-family: Causten-600, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #ededed;
+}
+
 @font-face {
     src:
         local("Causten"),
