@@ -70,8 +70,8 @@ h5 {
 @font-face {
     src:
         local("Causten"),
-        url("../fonts/Causten-Regular.woff") format("woff"),
-        url("../fonts/Causten-Regular.otf") format("otf");
+        url("../fonts/Causten-Regular.woff2") format("woff2"),
+        url("../fonts/Causten-Regular.woff") format("woff");
     font-family: Causten;
     font-weight: 400;
     font-style: normal;
@@ -81,8 +81,8 @@ h5 {
 @font-face {
     src:
         local("Causten"),
-        url("../fonts/Causten-Medium.woff") format("woff"),
-        url("../fonts/Causten-Medium.otf") format("otf");
+        url("../fonts/Causten-Medium.woff2") format("woff2"),
+        url("../fonts/Causten-Medium.woff") format("woff");
     font-family: Causten-500;
     font-weight: 500;
     font-style: normal;
@@ -92,8 +92,8 @@ h5 {
 @font-face {
     src:
         local("Causten"),
-        url("../fonts/Causten-SemiBold.woff") format("woff"),
-        url("../fonts/Causten-SemiBold.otf") format("otf");
+        url("../fonts/Causten-SemiBold.woff2") format("woff2"),
+        url("../fonts/Causten-SemiBold.woff") format("woff");
     font-family: Causten-600;
     font-weight: 600;
     font-style: normal;
@@ -103,8 +103,8 @@ h5 {
 @font-face {
     src:
         local("Causten"),
-        url("../fonts/Causten-Bold.woff") format("woff"),
-        url("../fonts/Causten-Bold.otf") format("otf");
+        url("../fonts/Causten-Bold.woff2") format("woff2"),
+        url("../fonts/Causten-Bold.woff") format("woff");
     font-family: Causten-700;
     font-weight: 700;
     font-style: normal;
