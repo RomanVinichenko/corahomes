@@ -1,21 +1,46 @@
 .vacancy {
-    padding: 186px 0 120px;
+  padding: 186px 0 120px;
 
-    &__number {
-        p {
-            padding-left: 8px;
-        }
+  &__number {
+    p {
+      padding-left: 8px;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__box {
+    min-width: 40%;
+
+    &:not(:last-child) {
+      margin-right: 48px;
     }
 
-    &__wrapper {
-        display: flex;
+    h5 {
+      margin-bottom: 16px;
+      color: #5e857a;
     }
+  }
 
-    &__box {
-        max-width: 353px;
+  &__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+    width: fit-content;
+    height: 24px;
+    font-size: 14px;
+    color: #fbd394;
 
-        &:not(:last-child) {
-            margin-right: 48px;
-        }
+    &::after {
+      content: url("../images/arrow-left.svg");
+      position: absolute;
+      left: 0;
+      top: -1px;
+      width: 24px;
+      height: 24px;
     }
+  }
 }

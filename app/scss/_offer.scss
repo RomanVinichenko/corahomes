@@ -1,0 +1,151 @@
+.offer {
+  padding: 194px 0 0;
+
+  h2 {
+    margin-bottom: 64px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+  }
+
+  &__img {
+    max-width: 886px;
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 486px;
+
+    h2 {
+      margin-bottom: 32px;
+      text-align: left;
+      color: #fbd394;
+    }
+
+    ul {
+      margin-bottom: 32px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #324541;
+
+      li {
+        display: flex;
+        align-items: center;
+        height: 32px;
+
+        &:not(:last-child) {
+          margin-bottom: 24px;
+        }
+      }
+
+      img {
+        margin-right: 4px;
+      }
+
+      p {
+        color: #b5b1ad;
+      }
+    }
+
+    .rv-button {
+      color: #18211f;
+      background-color: #fbd394;
+    }
+  }
+
+  &__text {
+    margin-bottom: 32px;
+    min-height: 143px;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba(#fff, 0.2);
+
+    p {
+      max-width: 65%;
+    }
+
+    h3 {
+      color: #fff;
+    }
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-color: #fff;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+  }
+}
+
+.swiper {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  height: 300px;
+}
+
+.mySwiper2 {
+  width: 100%;
+  height: 80%;
+}
+
+.mySwiper {
+  box-sizing: border-box;
+  padding: 10px 0;
+  height: 20%;
+
+  .swiper-slide {
+    position: relative;
+    height: 197px;
+    max-height: 197px;
+    overflow: hidden;
+    background: transparent;
+    object-fit: cover;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .swiper-slide-thumb-active {
+    &::after {
+      display: none;
+    }
+
+    img {
+      padding: 12px;
+      height: fill-available;
+    }
+  }
+}
