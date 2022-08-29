@@ -1,0 +1,21 @@
+.vacancy {
+    padding: 186px 0 120px;
+
+    &__number {
+        p {
+            padding-left: 8px;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__box {
+        max-width: 353px;
+
+        &:not(:last-child) {
+            margin-right: 48px;
+        }
+    }
+}
