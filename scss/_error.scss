@@ -1,0 +1,37 @@
+.error {
+  padding: 270px 0 153px;
+
+  &__wrapper {
+    padding: 0 15px 153px;
+    background-image: url("../images/error.svg");
+    background-position: center bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  h1 {
+    margin-bottom: 24px;
+    max-width: 487px;
+    color: #fff;
+  }
+
+  p {
+    margin-bottom: 48px;
+    font-size: 14px;
+  }
+
+  &__buttons {
+    display: flex;
+
+    a:first-child {
+      margin-right: 24px;
+      border: 1px solid #5e857a;
+      color: #5e857a;
+    }
+
+    a:last-child {
+      color: #18211f;
+      background-color: #fbd394;
+    }
+  }
+}
