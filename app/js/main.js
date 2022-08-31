@@ -26,3 +26,12 @@ var swiper2 = new Swiper(".mySwiper2", {
     swiper: swiper,
   },
 });
+
+const burger = document.querySelector('.menu__burger');
+const menuMobile = document.querySelector('.menu__inner');
+if (burger) {
+  burger.addEventListener('click', function () {
+    burger.classList.toggle('menu__burger--active');
+    menuMobile.classList.toggle('menu__inner--active');
+  });
+}

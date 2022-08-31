@@ -16,6 +16,10 @@
       text-transform: uppercase;
       color: rgba(251, 211, 148, 1);
     }
+
+    @include m($xl) {
+      color: #ededed;
+    }
   }
 
   ul {
@@ -25,6 +29,9 @@
     margin-bottom: 120px;
 
     li {
+      width: 100%;
+      max-width: 485px;
+
       img {
         margin-bottom: 24px;
       }
@@ -34,9 +41,10 @@
         color: #fff;
       }
 
-      small {
+      p {
         display: block;
         font-size: 14px;
+        text-align: left;
       }
     }
   }
@@ -65,7 +73,7 @@
 
   ul {
     display: grid;
-    grid-gap: 0 48px;
+    grid-gap: 48px;
     grid-template-columns: 1fr 1fr 1fr;
 
     li {
@@ -82,7 +90,7 @@
         }
 
         p {
-          margin-bottom: 16px;
+          margin: 0 auto 16px 0;
           height: 125px;
           text-align: left;
           color: #ededed;
