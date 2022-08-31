@@ -142,17 +142,45 @@ h5 {
   padding: 0 32px;
   width: fit-content;
   min-height: 50px;
-  border: 1px solid #fbd394;
   border-radius: 4px;
-  font-family: Causten-600, sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #fbd394;
+  background-color: transparent;
+  transition: all 0.3s;
+  margin: 0 auto;
 
   p {
     height: 15px;
     line-height: 1;
+    font-family: Causten-600, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 0!important;
+  }
+}
+.rv-gold {
+  border: 1px solid #fbd394;
+  p {
+    color: #F3D697;
+  }
+  &:hover {
+    background-color: #FBD394;
+    p {
+      color: #324541;
+    }
+  }
+  &:active {
+    background-color: #FFE4B9;
+    border: 1px solid #F3D697;
+    p {
+      color: #5E857A;
+    }
+  }
+  &:disabled {
+    border: 1px solid #D0D0D0;
+    background-color: transparent;
+    p {
+      color: #D0D0D0;
+    }
   }
 }
 
@@ -199,5 +227,26 @@ h5 {
     border-bottom: 1px solid #5e857a;
     border-left: none;
     background-color: transparent;
+  }
+}
+.cookie {
+  padding: 24px 32px 24px 24px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  max-width: 1280px;
+  margin: 0 auto;
+  bottom: 50px;
+  align-items: center;
+  left: 0;
+  right: 0;
+  background-color: #324541;
+  border-radius: 4px;
+  p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.4;
+    text-align: center;
+    color: #FFFFFF;
   }
 }
