@@ -22,16 +22,14 @@
 
   &__buttons {
     display: flex;
+    a {
+      margin: 0;
+    }
 
     a:first-child {
       margin-right: 24px;
       border: 1px solid #5e857a;
       color: #5e857a;
-    }
-
-    a:last-child {
-      color: #18211f;
-      background-color: #fbd394;
     }
   }
 }

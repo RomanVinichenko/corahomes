@@ -52,8 +52,7 @@
     }
 
     .rv-button {
-      color: #18211f;
-      background-color: #fbd394;
+      margin: 0 auto 0 0;
     }
   }
 
@@ -119,7 +118,7 @@
     height: 197px;
     max-height: 197px;
     overflow: hidden;
-    background: transparent;
+    background-color: transparent;
     object-fit: cover;
 
     &::after {
