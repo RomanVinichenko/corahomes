@@ -294,6 +294,19 @@ h5 {
   &__form {
     width: 100%;
     max-width: 656px;
+
+    p {
+      padding: 20px 0;
+
+      &:last-of-type {
+        margin-top: 28px;
+        padding: 0;
+      }
+    }
+
+    @include m($lg) {
+      max-width: 100%;
+    }
   }
 
   &__wrapper {
@@ -323,21 +336,28 @@ h5 {
         margin-bottom: 48px;
       }
     }
+
+    @include m($lg) {
+      margin-right: 0;
+      max-width: 100%;
+    }
   }
 
-  p {
-    padding: 25px 0;
-
-    &:last-of-type {
-      padding: 0;
-    }
+  .wpcf7-not-valid-tip {
+    margin-top: 6px;
+    font-family: Causten-500, sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.04em;
+    color: #fd4f4f;
   }
 
   .form-submit {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;
+    padding: 16px 0 15px;
     border: 1px solid #fbd394;
     border-radius: 4px;
     font-family: Causten-600, sans-serif;
@@ -357,6 +377,16 @@ h5 {
     border-bottom: 1px solid #5e857a;
     border-left: none;
     background-color: transparent;
+
+    &::placeholder {
+      font-family: Causten-600, sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #5e857a;
+    }
   }
 
   span {
@@ -385,6 +415,16 @@ h5 {
     text-transform: uppercase;
     color: #5e857a;
     background-color: transparent;
+
+    &::placeholder {
+      font-family: Causten-600, sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #5e857a;
+    }
   }
 }
 
