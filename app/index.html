@@ -7,6 +7,7 @@
   <title>Corahomes</title>
   <link rel="icon" type="image/svg" href="images/fav.svg" sizes="32x32">
   <link rel="stylesheet" href="css/style.min.css"/>
+  <link href="css/jquery.fancybox.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -92,6 +93,35 @@
   <section class="gallery">
     <div class="container">
       <h2>Portfolio</h2>
+      <div class="gallery__list">
+        <a data-fancybox="gallery" class="gallery__small" rel="gallery1" href="images/portfolio-home.jpg">
+          <img src="images/portfolio-home.jpg" alt="img"/>
+        </a>
+        <a data-fancybox="gallery" class="gallery__big" rel="gallery1" href="images/portfolio-home.jpg">
+          <img src="images/portfolio-home.jpg" alt="img"/>
+        </a>
+        <a data-fancybox="gallery" class="gallery__medium gallery__medium--first" rel="gallery1"
+           href="images/portfolio-home.jpg">
+          <img src="images/portfolio-home.jpg" alt="img"/>
+        </a>
+        <a data-fancybox="gallery" class="gallery__medium gallery__medium--second" rel="gallery1"
+           href="images/portfolio-home.jpg">
+          <img src="images/portfolio-home.jpg" alt="img"/>
+        </a>
+        <a data-fancybox="gallery" class="gallery__big gallery__big--revert" rel="gallery1"
+           href="images/portfolio-home.jpg">
+          <img src="images/portfolio-home.jpg" alt="img"/>
+        </a>
+        <a data-fancybox="gallery" class="gallery__small gallery__small--revert" rel="gallery1"
+           href="images/portfolio-home.jpg">
+          <img src="images/portfolio-home.jpg" alt="img"/>
+        </a>
+      </div>
+      <a class="rv-button rv-explore" href="#">
+        <p>
+          Explore more
+        </p>
+      </a>
     </div>
   </section>
   <section class="sale">
@@ -222,7 +252,10 @@
     <div class="container">
       <h2>Find Out How To <span>Start Building Your</span> Custom <span>Home</span></h2>
       <p>
-        Building your new custom home is a process. At Joy Design + Build, we are with you each step of the way; before, during and after with our Custom Concierges. Our reputation is built on stellar referrals and positive feedback from our past clients. It is our promise to you to provide you with outstanding value, style, design and service.
+        Building your new custom home is a process. At Joy Design + Build, we are with you each step of the way; before,
+        during and after with our Custom Concierges. Our reputation is built on stellar referrals and positive feedback
+        from our past clients. It is our promise to you to provide you with outstanding value, style, design and
+        service.
       </p>
       <a class="rv-button rv-gold" href="#">
         <p>get Consultation</p>
@@ -317,9 +350,15 @@
 </footer>
 <div class="cookie">
   <img src="images/cookie.svg" alt="Cookie">
-  <p>Our website uses cookies and other similar technologies to provide the best possible experience.</p>
-  <a class="rv-button" href="#">Accept</a>
+  <p class="cookie__text">Our website uses cookies and other similar technologies to provide the best possible experience.</p>
+  <a class="rv-button rv-gold" href="#">
+    <p>
+      Accept
+    </p>
+  </a>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
 <script src='js/swiper-bundle.min.js'></script>
 <script src='js/main.js'></script>
 </body>

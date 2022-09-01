@@ -110,7 +110,8 @@
 
 .mySwiper {
   box-sizing: border-box;
-  padding: 10px 0;
+  margin-top: 24px;
+  padding: 0;
   height: 20%;
 
   .swiper-slide {
@@ -145,6 +146,50 @@
     img {
       padding: 12px;
       height: fill-available;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    top: 0;
+    margin: 0;
+    width: 54px;
+    height: 100%;
+    font-size: 0 !important;
+    line-height: 1;
+    background: rgba(50, 69, 65, 0.6);
+
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 25px;
+      height: 8px;
+      transform: translate(-50%, -50%);
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .swiper-button-disabled {
+    opacity: 0.5;
+  }
+
+  .swiper-button-next {
+    right: 0;
+
+    &::before {
+      content: url("../images/swiper-arrow-right.svg");
+    }
+  }
+
+  .swiper-button-prev {
+    left: 0;
+
+    &::before {
+      content: url("../images/swiper-arrow-left.svg");
     }
   }
 }
