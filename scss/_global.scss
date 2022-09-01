@@ -61,6 +61,14 @@ h2 {
   letter-spacing: 0.015em;
   text-transform: uppercase;
   color: #ededed;
+
+  @include m($xl) {
+    font-size: 42px;
+  }
+
+  @include m($lg) {
+    font-size: 38px;
+  }
 }
 
 h3 {
@@ -209,6 +217,42 @@ h5 {
   }
 
   &:active {
+    border: 1px solid #5e857a;
+    background-color: #324541;
+
+    p {
+      color: #fff;
+    }
+  }
+
+  &:disabled {
+    border: 1px solid #d0d0d0;
+    background-color: transparent;
+
+    p {
+      color: #d0d0d0;
+    }
+  }
+}
+
+.rv-explore {
+  border: 1px solid #324541;
+  background-color: #324541;
+
+  p {
+    color: #fff;
+  }
+
+  &:hover {
+    border: 1px solid #5e857a;
+    background-color: #5e857a;
+
+    p {
+      color: #fff;
+    }
+  }
+
+  &:active {
     border: 1px solid #424f4c;
     background-color: #424f4c;
 
@@ -260,6 +304,7 @@ h5 {
 
     @include m($lg) {
       flex-direction: column;
+      padding: 24px;
     }
   }
 
@@ -268,15 +313,45 @@ h5 {
   }
 
   &__text {
+    margin-right: 30px;
     max-width: 545px;
+
+    p {
+      padding: 0;
+
+      @include m($lg) {
+        margin-bottom: 48px;
+      }
+    }
   }
 
   p {
-    padding: 30px 0 38px;
+    padding: 25px 0;
+
+    &:last-of-type {
+      padding: 0;
+    }
+  }
+
+  .form-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 1px solid #fbd394;
+    border-radius: 4px;
+    font-family: Causten-600, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 110%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fbd394;
   }
 
   textarea {
-    height: 50px;
+    width: 100%;
+    height: 40px;
     border-top: none;
     border-right: none;
     border-bottom: 1px solid #5e857a;
@@ -284,8 +359,18 @@ h5 {
     background-color: transparent;
   }
 
+  span {
+    font-family: Causten-600, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #5e857a;
+  }
+
   input {
-    padding: 0 0 16px;
+    padding: 3px 0 19px;
     width: 100%;
     outline: none;
     border-top: none;
@@ -317,7 +402,12 @@ h5 {
   border-radius: 4px;
   background-color: #324541;
 
-  p {
+  .rv-button {
+    margin: 0;
+    width: fit-content;
+  }
+
+  &__text {
     font-weight: 400;
     font-size: 20px;
     line-height: 1.4;
