@@ -247,10 +247,10 @@
   }
 
   ul {
-    margin-top: 120px;
     display: grid;
     grid-gap: 0 48px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 120px;
 
     li {
       overflow: hidden;
