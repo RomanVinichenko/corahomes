@@ -2,34 +2,90 @@
   padding: 270px 0 153px;
 
   &__wrapper {
-    padding: 0 15px 153px;
+    padding-bottom: 153px;
     background-image: url("../images/error.svg");
     background-position: center bottom;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @include m(1500) {
+      background-position: left 90px bottom;
+    }
+
+    @include m($xl) {
+      padding-bottom: 0;
+      background-image: none;
+    }
+  }
+
+  &__img {
+    display: none;
+    margin: 0 auto 48px;
+
+    @include m($xl) {
+      display: block;
+    }
   }
 
   h1 {
-    margin-bottom: 24px;
+    margin: 0 0 24px;
     max-width: 487px;
     color: #fff;
+
+    @include m($xl) {
+      margin: 0 auto 24px;
+      text-align: center;
+    }
+
+    @include m($lg) {
+      margin: 0 auto 16px;
+    }
   }
 
-  p {
+  &__text {
     margin-bottom: 48px;
     font-size: 14px;
+
+    @include m($xl) {
+      text-align: center;
+    }
+
+    @include m($lg) {
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
   }
 
   &__buttons {
     display: flex;
+
     a {
       margin: 0;
     }
 
     a:first-child {
-      margin-right: 24px;
-      border: 1px solid #5e857a;
-      color: #5e857a;
+      margin: 0 24px 0 0;
+
+      @include m($lg) {
+        margin: 0 0 24px;
+      }
     }
+
+    @include m($xl) {
+      justify-content: center;
+    }
+
+    @include m($lg) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @include m($xl) {
+    padding: 220px 0 103px;
+  }
+
+  @include m($lg) {
+    padding: 194px 0 60px;
   }
 }
