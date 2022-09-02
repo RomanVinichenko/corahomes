@@ -26,6 +26,20 @@ var swiper2 = new Swiper(".mySwiper2", {
     swiper: swiper,
   },
 });
+var salesSwiper = new Swiper(".sales-swiper", {
+  spaceBetween: 0,
+  centeredSlides: true,
+  slidesPerView: 1,
+  loop: true,
+  loopAdditionalSlides: 30,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
 
 const burger = document.querySelector('.menu__burger');
 const menuMobile = document.querySelector('.menu__inner');

@@ -11,7 +11,7 @@ body {
   background-image: linear-gradient(0deg, #18211f, #18211f);
   cursor: default;
 
-  @include m($xl) {
+  @include m($lg) {
     font-size: 16px;
   }
 }
@@ -79,6 +79,14 @@ h3 {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ededed;
+
+  @include m($xl) {
+    font-size: 22px;
+  }
+
+  @include m($lg) {
+    font-size: 20px;
+  }
 }
 
 h4 {
@@ -301,6 +309,7 @@ h5 {
       &:last-of-type {
         margin-top: 28px;
         padding: 0;
+        max-height: 51px;
       }
     }
 
@@ -399,8 +408,21 @@ h5 {
     color: #5e857a;
   }
 
+  .wpcf7-response-output {
+    margin: 6px 0 0;
+    padding: 0;
+    border: 1px solid #fd4f4f;
+    font-family: Causten-600, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
   input {
-    padding: 3px 0 19px;
+    padding: 3px 0 12px;
     width: 100%;
     outline: none;
     border-top: none;
