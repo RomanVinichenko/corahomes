@@ -54,6 +54,22 @@
       color: #fbd394;
     }
 
+    a {
+      transition: all 0.3s;
+
+      &:hover {
+        color: #fbd394;
+      }
+
+      &:active {
+        color: #5e857a;
+      }
+
+      &:disabled {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
     ul {
       li {
         + li {

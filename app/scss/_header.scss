@@ -4,6 +4,7 @@
   right: 0;
   top: 0;
   z-index: 20;
+  border-bottom: 1px solid transparent;
   background-color: transparent;
   transition: all 0.3s;
 
@@ -16,7 +17,12 @@
   }
 
   &--active {
+    border-bottom: 1px solid rgba(#fff, 0.2);
     background-color: #324541;
+
+    .menu {
+      border-bottom: 1px solid transparent;
+    }
   }
 }
 
@@ -26,6 +32,7 @@
   justify-content: space-between;
   padding: 32px 0;
   border-bottom: 1px solid rgba(#fff, 0.2);
+  transition: all 0.3s;
 
   ul {
     display: flex;
@@ -39,6 +46,19 @@
         font-size: 16px;
         line-height: 1.1;
         text-transform: uppercase;
+        transition: all 0.3s;
+
+        &:hover {
+          color: #fbd394;
+        }
+
+        &:active {
+          color: #5e857a;
+        }
+
+        &:disabled {
+          color: rgba(255, 255, 255, 0.3);
+        }
       }
 
       @include m($xl) {
