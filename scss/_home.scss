@@ -357,9 +357,8 @@
   text-align: left;
   text-transform: uppercase;
   color: #fff;
-  background: linear-gradient(to top, #324541 50%, transparent 50%);
+  background-image: linear-gradient(to top, #324541 50%, transparent 50%);
   background-position: top;
-  background-size: 200%;
   background-size: 100% 200%;
   transition: all 0.3s;
 
