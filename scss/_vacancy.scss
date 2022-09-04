@@ -1,6 +1,22 @@
 .vacancy {
   padding: 186px 0 120px;
 
+  &__block {
+    @include m(1500) {
+      flex-direction: column;
+    }
+
+    @include m($lg) {
+      margin-top: 18px !important;
+    }
+  }
+
+  h1 {
+    @include m(1500) {
+      margin: 0 0 24px;
+    }
+  }
+
   &__number {
     p {
       padding-left: 8px;
@@ -16,11 +32,24 @@
 
     &:not(:last-child) {
       margin-right: 48px;
+
+      @include m($lg) {
+        margin-right: 30px;
+      }
     }
 
     h5 {
       margin-bottom: 16px;
       color: #5e857a;
+    }
+
+    @include m($lg) {
+      width: fit-content;
+      min-width: 158px;
+    }
+
+    @include m($sm) {
+      min-width: fit-content;
     }
   }
 
@@ -42,5 +71,9 @@
       width: 24px;
       height: 24px;
     }
+  }
+
+  @include m($lg) {
+    padding: 152px 0 120px;
   }
 }

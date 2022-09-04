@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
   font-family: Causten, sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -79,14 +80,6 @@ h3 {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #ededed;
-
-  @include m($xl) {
-    font-size: 22px;
-  }
-
-  @include m($lg) {
-    font-size: 20px;
-  }
 }
 
 h4 {
@@ -294,6 +287,15 @@ h5 {
     height: 440px;
     object-fit: cover;
   }
+
+  h1 {
+    @include m($lg) {
+      margin: 0 auto;
+      max-width: 290px;
+      font-size: 38px;
+      text-align: center;
+    }
+  }
 }
 
 .send-form {
@@ -447,6 +449,14 @@ h5 {
       text-transform: uppercase;
       color: #5e857a;
     }
+  }
+
+  @include m($xl) {
+    margin-bottom: 80px;
+  }
+
+  @include m($lg) {
+    margin-bottom: 60px;
   }
 }
 

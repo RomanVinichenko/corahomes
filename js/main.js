@@ -11,10 +11,16 @@ window.addEventListener('scroll', function () {
 });
 
 var swiper = new Swiper(".mySwiper", {
-  spaceBetween: 16,
-  slidesPerView: 4,
+  spaceBetween: 8,
+  slidesPerView: 3,
   freeMode: true,
   watchSlidesProgress: true,
+  breakpoints: {
+    820: {
+      slidesPerView: 4,
+      spaceBetween: 16,
+    }
+  }
 });
 var swiper2 = new Swiper(".mySwiper2", {
   spaceBetween: 10,
@@ -39,6 +45,7 @@ var salesSwiper = new Swiper(".sales-swiper", {
   pagination: {
     el: ".swiper-pagination",
   },
+
 });
 
 const burger = document.querySelector('.menu__burger');

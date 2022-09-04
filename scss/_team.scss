@@ -4,6 +4,10 @@
   h2 {
     margin-bottom: 40px;
     text-align: center;
+
+    @include m($lg) {
+      margin-bottom: 24px;
+    }
   }
 
   p {
@@ -18,7 +22,12 @@
     }
 
     @include m($xl) {
-      color: #ededed;
+      margin-bottom: 80px;
+    }
+
+    @include m($lg) {
+      margin-bottom: 60px;
+      font-size: 18px;
     }
   }
 
@@ -29,9 +38,6 @@
     margin-bottom: 120px;
 
     li {
-      width: 100%;
-      max-width: 485px;
-
       img {
         margin-bottom: 24px;
       }
@@ -43,16 +49,63 @@
 
       p {
         display: block;
+        margin: 0;
         font-size: 14px;
         text-align: left;
       }
     }
+
+    @include m($xl) {
+      grid-gap: 0 30px;
+      margin-bottom: 80px;
+    }
+
+    @include m($lg) {
+      grid-gap: 30px;
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 60px;
+    }
+
+    @include m(620) {
+      grid-gap: 48px 0;
+      grid-template-columns: 1fr;
+    }
   }
 
   &__img {
+    min-height: 139px;
+    max-height: 623px;
+
     img {
+      width: 100%;
+      height: 100%;
+      min-height: 139px;
       max-height: 623px;
       object-fit: cover;
+    }
+  }
+
+  @include m($xl) {
+    padding: 120px 0 80px;
+  }
+
+  @include m($lg) {
+    padding: 120px 0 60px;
+  }
+}
+
+.preview__team {
+  img:first-of-type {
+    @include m($md) {
+      display: none;
+    }
+  }
+
+  img:last-of-type {
+    display: none;
+
+    @include m($md) {
+      display: block;
     }
   }
 }
@@ -63,12 +116,20 @@
   h2 {
     margin-bottom: 40px;
     text-align: center;
+
+    @include m($lg) {
+      margin-bottom: 24px;
+    }
   }
 
   p {
     margin: 0 auto 80px;
     max-width: 442px;
     text-align: center;
+
+    @include m($lg) {
+      font-size: 18px;
+    }
   }
 
   ul {
@@ -77,23 +138,36 @@
     grid-template-columns: 1fr 1fr 1fr;
 
     li {
+      height: 291px;
+
       a {
-        display: block;
+        display: flex;
+        flex-direction: column;
         padding: 40px;
-        max-height: 291px;
+        width: 100%;
+        height: 100%;
         border: 1px solid #324541;
         background-color: transparent;
         transition: all 0.3s;
 
         h3 {
           margin-bottom: 16px;
+
+          @include m($xl) {
+            font-size: 24px;
+          }
         }
 
         p {
-          margin: 0 auto 16px 0;
-          height: 125px;
+          margin: 0 0 16px;
+          width: 100%;
+          max-width: 100%;
           text-align: left;
           color: #ededed;
+
+          @include m($lg) {
+            font-size: 16px;
+          }
         }
 
         &:hover {
@@ -111,13 +185,43 @@
             }
           }
         }
+
+        @include m(1300) {
+          padding: 30px;
+        }
+
+        @include m($lg) {
+          padding: 24px;
+        }
       }
+
+      @include m($lg) {
+        height: 258px;
+      }
+    }
+
+    @include m(1300) {
+      grid-gap: 30px;
+    }
+
+    @include m($xl) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include m($lg) {
+      grid-gap: 24px;
+    }
+
+    @include m($md) {
+      grid-gap: 24px 0;
+      grid-template-columns: 1fr;
     }
   }
 
   &__inner {
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
   }
 
   &__tags {
@@ -133,13 +237,25 @@
         &::after {
           content: "";
           position: absolute;
-          left: -18px;
+          left: -19px;
           top: 50%;
           width: 2px;
           height: 15px;
           background-color: #ededed;
           transform: translateY(-50%);
+
+          @include m($lg) {
+            left: -11px;
+          }
         }
+
+        @include m($lg) {
+          margin-left: 20px;
+        }
+      }
+
+      @include m($lg) {
+        font-size: 16px;
       }
     }
   }
@@ -161,5 +277,13 @@
         transition: fill 0.3s;
       }
     }
+  }
+
+  @include m($xl) {
+    padding: 80px 0;
+  }
+
+  @include m($lg) {
+    padding: 60px 0;
   }
 }
