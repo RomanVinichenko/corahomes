@@ -406,10 +406,29 @@
 }
 
 .sale {
+  position: relative;
+  z-index: 10;
   padding: 120px 0;
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(24, 33, 31);
+    filter: blur(150px);
+  }
+
+  .container {
+    z-index: 5;
+  }
+
   h2 {
-    margin-bottom: 48px;
+    z-index: 10;
+    margin-bottom: 40px;
     text-align: center;
     color: #fff;
   }
@@ -460,7 +479,7 @@
 
       &:hover {
         .sale__button {
-          background-position: bottom;
+          background-position: bottom -1px center;
         }
 
         .sale__link {
@@ -472,6 +491,10 @@
             transform: scale(1.1);
           }
         }
+      }
+
+      @include m(850) {
+        min-height: 507px;
       }
     }
 
@@ -501,6 +524,12 @@
       bottom: 8px;
       opacity: 0;
       transition: all 0.3s;
+
+      @include m($xl) {
+        right: 4px;
+        bottom: 4px;
+        transform: scale(0.8);
+      }
     }
 
     .sale__title {
@@ -509,9 +538,10 @@
       margin-bottom: 16px;
 
       h3 {
+        margin-right: 15px;
         color: #fff;
 
-        @include m($lg) {
+        @include m($xl) {
           font-size: 20px;
         }
       }
@@ -528,11 +558,13 @@
 
     @include m($xl) {
       grid-gap: 0 12px;
+      margin-bottom: 60px;
     }
 
     @include m(850) {
-      grid-gap: 0 12px;
+      grid-gap: 48px 0;
       grid-template-columns: 1fr;
+      margin-bottom: 48px;
     }
   }
 
