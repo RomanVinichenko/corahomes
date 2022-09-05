@@ -24,8 +24,9 @@ body {
 }
 
 .home {
-  background-image: url("../images/bg.jpg");
-  background-size: 100%;
+  background-image: url("../images/bg-test.jpg");
+
+  //background-size: 100%;
   background-repeat: repeat;
 }
 
@@ -486,4 +487,8 @@ h5 {
     text-align: center;
     color: #fff;
   }
+}
+
+.fancybox-button--zoom {
+  display: none !important;
 }
