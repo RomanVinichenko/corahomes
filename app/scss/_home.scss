@@ -34,14 +34,47 @@
     align-items: flex-end;
     justify-content: space-between;
     transform: translateX(-50%);
+
+    @include m(1290) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    @include m($md) {
+      bottom: 48px;
+    }
   }
 
   h1 {
     max-width: 619px;
     color: #fff;
+
+    @include m(1600) {
+      max-width: 550px;
+      font-size: 66px;
+    }
+
+    @include m(1385) {
+      font-size: 62px;
+    }
+
+    @include m(1290) {
+      margin-bottom: 24px;
+      max-width: 100%;
+      text-align: center;
+    }
+
+    @include m($xl) {
+      font-size: 54px;
+    }
+
+    @include m($lg) {
+      font-size: 45px;
+    }
   }
 
   &__present {
+    margin-left: 48px;
     padding: 48px;
     width: 100%;
     height: fit-content;
@@ -54,8 +87,17 @@
       grid-template-columns: 1fr 1fr 1fr;
 
       li {
+        position: relative;
+
         img {
           margin-bottom: 24px;
+
+          @include m($md) {
+            position: absolute;
+            left: 0;
+            top: 0;
+            margin: 0;
+          }
         }
 
         h5 {
@@ -66,7 +108,40 @@
         p {
           font-size: 14px;
         }
+
+        @include m($md) {
+          padding-left: 56px;
+        }
       }
+
+      @include m(1600) {
+        grid-gap: 0 32px;
+      }
+
+      @include m($lg) {
+        grid-gap: 0 24px;
+      }
+
+      @include m($md) {
+        grid-gap: 48px 0;
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @include m(1600) {
+      padding: 32px;
+    }
+
+    @include m(1385) {
+      margin-left: 32px;
+    }
+
+    @include m(1290) {
+      margin: 0 auto;
+    }
+
+    @include m($lg) {
+      padding: 24px;
     }
   }
 }
@@ -74,10 +149,20 @@
 .we {
   padding: 240px 0 120px;
 
+  img {
+    width: 100%;
+    min-height: 138px;
+    object-fit: cover;
+  }
+
   h2 {
     margin-bottom: 48px;
     text-align: center;
     color: #fff;
+
+    @include m($lg) {
+      margin-bottom: 32px;
+    }
   }
 
   p {
@@ -88,6 +173,22 @@
     &:not(:last-of-type) {
       margin-bottom: 24px;
     }
+
+    @include m($xl) {
+      margin: 0 auto 80px;
+    }
+
+    @include m($lg) {
+      margin: 0 auto 40px;
+    }
+  }
+
+  @include m($xl) {
+    padding: 200px 0 90px;
+  }
+
+  @include m($lg) {
+    padding: 180px 0 60px;
   }
 }
 
@@ -97,6 +198,14 @@
   h2 {
     margin-bottom: 80px;
     text-align: center;
+
+    @include m($xl) {
+      margin-bottom: 55px;
+    }
+
+    @include m($lg) {
+      margin-bottom: 32px;
+    }
   }
 
   &__list {
@@ -109,11 +218,51 @@
       height: 641px;
       max-height: 641px;
       object-fit: cover;
+
+      @include m(1500) {
+        height: 550px;
+      }
+
+      @include m(1400) {
+        height: 480px;
+      }
+
+      @include m($xl) {
+        height: 400px;
+      }
+
+      @include m($lg) {
+        height: 300px;
+      }
+
+      @include m($md) {
+        height: 200px;
+      }
     }
 
     a {
       margin-bottom: 40px;
       width: 100%;
+
+      &:first-child {
+        img {
+          @include m(627) {
+            height: 454px;
+          }
+        }
+      }
+
+      &:last-child {
+        img {
+          @include m(627) {
+            height: 454px;
+          }
+        }
+      }
+
+      @include m(1500) {
+        margin-bottom: 30px;
+      }
     }
   }
 
@@ -122,6 +271,26 @@
 
     img {
       padding-right: 20px;
+
+      @include m(1500) {
+        padding-right: 15px;
+      }
+
+      @include m(627) {
+        padding-right: 0;
+      }
+    }
+
+    @include m(1500) {
+      max-width: 40%;
+    }
+
+    @include m($lg) {
+      max-width: 50%;
+    }
+
+    @include m(627) {
+      max-width: 100%;
     }
   }
 
@@ -130,22 +299,62 @@
 
     img {
       padding-left: 20px;
+
+      @include m(1500) {
+        padding-left: 15px;
+      }
+
+      @include m(627) {
+        padding-left: 0;
+      }
+    }
+
+    @include m(1500) {
+      max-width: 60%;
+    }
+
+    @include m($lg) {
+      max-width: 50%;
+    }
+
+    @include m(627) {
+      max-width: 100%;
     }
   }
 
   &__medium {
     max-width: 50%;
+
+    @include m(627) {
+      max-width: 100%;
+    }
   }
 
   &__medium--first {
     img {
       padding-right: 20px;
+
+      @include m(1500) {
+        padding-right: 15px;
+      }
+
+      @include m(627) {
+        padding-right: 0;
+      }
     }
   }
 
   &__medium--second {
     img {
       padding-left: 20px;
+
+      @include m(1500) {
+        padding-left: 15px;
+      }
+
+      @include m(627) {
+        padding-left: 0;
+      }
     }
   }
 
@@ -153,6 +362,14 @@
     img {
       padding-right: 20px;
       padding-left: 0;
+
+      @include m(1500) {
+        padding-right: 15px;
+      }
+
+      @include m(627) {
+        padding-right: 0;
+      }
     }
   }
 
@@ -160,11 +377,31 @@
     img {
       padding-right: 0;
       padding-left: 20px;
+
+      @include m(1500) {
+        padding-left: 15px;
+      }
+
+      @include m(627) {
+        padding-left: 0;
+      }
     }
   }
 
   .rv-explore {
     margin: 8px auto 0;
+
+    @include m(1500) {
+      margin: 18px auto 0;
+    }
+  }
+
+  @include m($xl) {
+    padding: 90px 0;
+  }
+
+  @include m($lg) {
+    padding: 60px 0;
   }
 }
 
@@ -181,6 +418,33 @@
     margin: 0 auto 80px;
     max-width: 630px;
     text-align: center;
+
+    @include m(1500) {
+      margin: 0 auto 60px;
+    }
+
+    @include m($xl) {
+      margin: 0 auto 55px;
+    }
+
+    @include m($lg) {
+      margin: 0 auto 48px;
+      font-size: 18px;
+    }
+  }
+
+  .sale__tags {
+    flex-wrap: wrap;
+    margin: 0;
+
+    div {
+      margin-right: 16px;
+      margin-bottom: 16px;
+
+      + div {
+        margin-left: 0;
+      }
+    }
   }
 
   ul {
@@ -223,6 +487,8 @@
 
       img:first-child {
         width: 100%;
+        height: 100%;
+        min-height: 216px;
         max-height: 304px;
         object-fit: cover;
         transition: all 0.3s;
@@ -244,6 +510,10 @@
 
       h3 {
         color: #fff;
+
+        @include m($lg) {
+          font-size: 20px;
+        }
       }
 
       h5 {
@@ -251,6 +521,27 @@
         color: #fbd394;
       }
     }
+
+    @include m(1400) {
+      grid-gap: 0 24px;
+    }
+
+    @include m($xl) {
+      grid-gap: 0 12px;
+    }
+
+    @include m(850) {
+      grid-gap: 0 12px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @include m($xl) {
+    padding: 90px 0;
+  }
+
+  @include m($lg) {
+    padding: 60px 0;
   }
 }
 
