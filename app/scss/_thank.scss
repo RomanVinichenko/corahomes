@@ -3,7 +3,7 @@
   padding: 240px 0;
 
   .send-form__wrapper {
-    align-items: flex-end;
+    align-items: center;
   }
 
   .rv-button {
@@ -18,6 +18,8 @@
   }
 
   .send-form__thank {
+    margin: 0 auto;
     width: 100%;
+    max-width: 400px;
   }
 }
