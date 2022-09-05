@@ -17,9 +17,33 @@
     }
   }
 
+  .send-form__text {
+    @include m($lg) {
+      text-align: center;
+    }
+  }
+
+  h2 {
+    @include m($md) {
+      font-size: 30px;
+    }
+  }
+
   .send-form__thank {
     margin: 0 auto;
     width: 100%;
     max-width: 400px;
+  }
+
+  @include m(1500) {
+    padding: 200px 0;
+  }
+
+  @include m($xl) {
+    padding: 200px 0 120px;
+  }
+
+  @include m($lg) {
+    padding: 160px 0 100px;
   }
 }
