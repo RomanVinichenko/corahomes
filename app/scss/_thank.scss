@@ -1,4 +1,23 @@
 .thank {
   margin: 0;
   padding: 240px 0;
+
+  .send-form__wrapper {
+    align-items: flex-end;
+  }
+
+  .rv-button {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  .send-form__thank {
+    width: 100%;
+  }
 }
