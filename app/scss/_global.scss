@@ -309,7 +309,7 @@ h5 {
   margin-bottom: 120px;
 
   #form-file-span {
-    padding: 0 0 12px;
+    padding: 0 24px 12px 0;
     border-bottom: 1px solid #5e857a;
   }
 
@@ -356,7 +356,7 @@ h5 {
       padding: 0;
 
       @include m($lg) {
-        margin-bottom: 48px;
+        margin-bottom: 38px;
       }
     }
 
@@ -612,15 +612,29 @@ h5 {
 }
 
 .home-page-popup {
+  padding: 0 15px;
+
   .home-page-popup-body {
     position: relative;
     display: flex;
     justify-content: space-between;
     padding: 48px;
+
+    @include m($lg) {
+      flex-direction: column;
+      padding: 24px;
+    }
   }
 
   .home-page-popup-left {
+    margin-right: 15px;
     max-width: 500px;
+
+    @include m($lg) {
+      margin-right: 0;
+      margin-bottom: 38px;
+      max-width: 100%;
+    }
   }
 
   .home-page-popup-close {
@@ -631,7 +645,7 @@ h5 {
   }
 
   h2 {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
 
   .send-form__wrapper {
