@@ -1,5 +1,7 @@
 .error {
+  opacity: 0;
   padding: 270px 0 153px;
+  animation: fade 0.8s forwards;
 
   &__wrapper {
     padding-bottom: 153px;

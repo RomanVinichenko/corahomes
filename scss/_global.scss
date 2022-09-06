@@ -281,6 +281,8 @@ h5 {
 
 .preview {
   position: relative;
+  opacity: 0;
+  animation: footer-header 0.5s forwards;
 
   .container {
     position: absolute;
@@ -296,6 +298,9 @@ h5 {
   }
 
   h1 {
+    opacity: 0;
+    animation: fade 0.8s forwards;
+
     @include m($lg) {
       margin: 0 auto;
       max-width: 290px;
@@ -306,7 +311,9 @@ h5 {
 }
 
 .send-form {
+  opacity: 0;
   margin-bottom: 120px;
+  animation: fade 0.8s forwards;
 
   #form-file-span {
     padding: 0 24px 12px 0;
@@ -672,5 +679,35 @@ h5 {
 
   .home-page-popup-right {
     width: 100%;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translateY(120px);
+  }
+
+  35% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes footer-header {
+  0% {
+    opacity: 0;
+  }
+
+  35% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
   }
 }
