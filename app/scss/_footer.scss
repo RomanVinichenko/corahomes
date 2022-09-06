@@ -1,7 +1,9 @@
 .footer {
+  opacity: 0;
   margin-top: auto;
   padding: 80px 0 40px;
   background: linear-gradient(0deg, rgba(50, 69, 65, 0.2), rgba(50, 69, 65, 0.2)), #18211f;
+  animation: footer-header 0.9s forwards;
 
   &__wrapper {
     display: flex;

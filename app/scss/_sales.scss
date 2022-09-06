@@ -46,6 +46,9 @@
   }
 
   .sales-slide {
+    opacity: 0;
+    animation: fade 0.9s forwards;
+
     &:not(:last-child) {
       margin-bottom: 80px;
     }
