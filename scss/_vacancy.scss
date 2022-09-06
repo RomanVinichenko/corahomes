@@ -73,7 +73,11 @@
     }
   }
 
-  @include m($lg) {
+  @include m($xl) {
     padding: 152px 0 120px;
+  }
+
+  @include m($lg) {
+    padding: 152px 0 90px;
   }
 }
