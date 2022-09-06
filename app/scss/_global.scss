@@ -168,7 +168,7 @@ h5 {
     height: 15px;
     font-family: "Causten-600", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 16px !important;
     line-height: 1;
     text-transform: uppercase;
     transition: all 0.3s;
@@ -630,6 +630,10 @@ h5 {
     margin-right: 15px;
     max-width: 500px;
 
+    @include m($xl) {
+      max-width: 400px;
+    }
+
     @include m($lg) {
       margin-right: 0;
       margin-bottom: 38px;
@@ -642,6 +646,11 @@ h5 {
     right: 20px;
     top: 20px;
     transform: scale(1.9);
+
+    @include m($lg) {
+      right: 10px;
+      top: 10px;
+    }
   }
 
   h2 {
@@ -655,6 +664,10 @@ h5 {
 
   .send-form {
     margin: 0;
+
+    .container {
+      padding: 0;
+    }
   }
 
   .home-page-popup-right {
