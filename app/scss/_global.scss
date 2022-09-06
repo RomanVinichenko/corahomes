@@ -378,7 +378,8 @@ h5 {
 
   .wpcf7-not-valid {
     position: relative;
-    color: #fd4f4f;
+
+    //color: #fd4f4f;
 
     &::after {
       content: "++";
@@ -387,6 +388,18 @@ h5 {
       top: 0;
       width: 20px;
       height: 20px;
+    }
+
+    input {
+      &::placeholder {
+        color: #fd4f4f;
+      }
+    }
+
+    textarea {
+      &::placeholder {
+        color: #fd4f4f;
+      }
     }
   }
 
@@ -474,12 +487,12 @@ h5 {
   }
 
   .wpcf7-response-output {
-    margin: 6px 0 0 !important;
+    margin: 10px 0 0 !important;
     padding: 0 !important;
-    border: 1px solid #fd4f4f !important;
+    border-bottom: 1px solid #fd4f4f !important;
     font-family: "Causten-600", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.04em;
     text-transform: uppercase;
