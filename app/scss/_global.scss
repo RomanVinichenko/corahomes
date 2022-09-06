@@ -379,8 +379,6 @@ h5 {
   .wpcf7-not-valid {
     position: relative;
 
-    //color: #fd4f4f;
-
     &::after {
       content: "++";
       position: absolute;
@@ -390,10 +388,8 @@ h5 {
       height: 20px;
     }
 
-    input {
-      &::placeholder {
-        color: #fd4f4f;
-      }
+    &::placeholder {
+      color: #fd4f4f;
     }
 
     textarea {
@@ -423,35 +419,23 @@ h5 {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #fbd394;
-
-    p {
-      color: #f3d697;
-    }
+    transition: all 0.3s;
 
     &:hover {
+      color: #324541;
       background-color: #fbd394;
-
-      p {
-        color: #324541;
-      }
     }
 
     &:active {
       border: 1px solid #f3d697;
+      color: #5e857a;
       background-color: #ffe4b9;
-
-      p {
-        color: #5e857a;
-      }
     }
 
     &:disabled {
       border: 1px solid #d0d0d0;
+      color: #d0d0d0;
       background-color: transparent;
-
-      p {
-        color: #d0d0d0;
-      }
     }
   }
 
@@ -463,6 +447,13 @@ h5 {
     border-right: none;
     border-bottom: 1px solid #5e857a;
     border-left: none;
+    font-family: "Causten-600", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
     background-color: transparent;
 
     &::placeholder {
@@ -487,9 +478,12 @@ h5 {
   }
 
   .wpcf7-response-output {
-    margin: 10px 0 0 !important;
+    margin: 12px 0 0 !important;
     padding: 0 !important;
+    border-top: none;
+    border-right: none;
     border-bottom: 1px solid #fd4f4f !important;
+    border-left: none;
     font-family: "Causten-600", sans-serif;
     font-weight: 600;
     font-size: 14px;
@@ -513,7 +507,7 @@ h5 {
     line-height: 1.1;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #5e857a;
+    color: #fff;
     background-color: transparent;
 
     &::placeholder {
