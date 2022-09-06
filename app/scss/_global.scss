@@ -308,15 +308,20 @@ h5 {
 .send-form {
   margin-bottom: 120px;
 
+  #form-file-span {
+    padding: 0 0 15px;
+    border-bottom: 1px solid #5e857a;
+  }
+
   &__form {
     width: 100%;
     max-width: 656px;
 
     p {
-      padding: 20px 0;
+      padding: 18px 0;
 
       &:last-of-type {
-        margin-top: 28px;
+        margin-top: 20px;
         padding: 0;
         max-height: 51px;
       }
@@ -385,6 +390,12 @@ h5 {
     }
   }
 
+  label {
+    br {
+      display: none;
+    }
+  }
+
   .form-submit {
     display: flex;
     align-items: center;
@@ -399,6 +410,36 @@ h5 {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #fbd394;
+
+    p {
+      color: #f3d697;
+    }
+
+    &:hover {
+      background-color: #fbd394;
+
+      p {
+        color: #324541;
+      }
+    }
+
+    &:active {
+      border: 1px solid #f3d697;
+      background-color: #ffe4b9;
+
+      p {
+        color: #5e857a;
+      }
+    }
+
+    &:disabled {
+      border: 1px solid #d0d0d0;
+      background-color: transparent;
+
+      p {
+        color: #d0d0d0;
+      }
+    }
   }
 
   textarea {
@@ -559,36 +600,6 @@ h5 {
 
 .fancybox-button--zoom {
   display: none !important;
-}
-
-.form__paragraph {
-  position: relative;
-
-  label {
-    position: relative;
-    width: 100%;
-
-    &::after {
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: 5;
-      width: 24px;
-      height: 24px;
-      background-image: url("../images/file-in.svg");
-      cursor: pointer !important;
-    }
-  }
-}
-
-.wpcf7-file {
-  position: absolute;
-  top: 20px;
-  z-index: 20;
-  width: 20px;
-  height: 20px;
-  overflow: hidden;
-  cursor: pointer;
 }
 
 .home-page-popup {
