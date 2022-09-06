@@ -87,18 +87,18 @@
           </p>
         </li>
       </ul>
-      <div class="benefits__img">
+      <div class="benefits__img wow">
         <img src="images/benefits-team.jpg" alt="Team">
       </div>
     </div>
   </section>
-  <section class="position">
+  <section class="position wow">
     <div class="container">
       <h2>Open positions</h2>
       <p>
         Choose an open vacancy that suits you, we are already waiting for you!
       </p>
-      <ul>
+      <ul class="wow">
         <li>
           <a href="#">
             <h3>3D visualizer artist</h3>
@@ -248,6 +248,13 @@
       York, NY 10022</p>
   </div>
 </footer>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?ver=6.0.2"></script>
+<script src="js/wow.min.js"></script>
+<script>
+  $(document).ready(function () {
+    new WOW().init();
+  });
+</script>
 <script src='js/swiper-bundle.min.js'></script>
 <script src='js/main.js'></script>
 </body>

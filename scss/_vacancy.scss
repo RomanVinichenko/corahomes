@@ -1,6 +1,15 @@
 .vacancy {
   padding: 186px 0 120px;
 
+  h1,
+  h3 {
+    animation: footer-header 0.8s forwards;
+  }
+
+  .terms__wrapper {
+    animation: footer-header 0.8s forwards;
+  }
+
   &__block {
     @include m(1500) {
       flex-direction: column;
@@ -57,11 +66,13 @@
     position: relative;
     display: flex;
     align-items: center;
+    opacity: 0;
     padding-left: 32px;
     width: fit-content;
     height: 24px;
     font-size: 14px;
     color: #fbd394;
+    animation: footer-header 0.75s forwards;
 
     &::after {
       content: url("../images/arrow-left.svg");

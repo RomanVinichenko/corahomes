@@ -627,6 +627,10 @@ h5 {
     justify-content: space-between;
     padding: 48px;
 
+    .send-form {
+      animation: footer-header 0.9s forwards;
+    }
+
     @include m($lg) {
       flex-direction: column;
       padding: 24px;
@@ -634,8 +638,10 @@ h5 {
   }
 
   .home-page-popup-left {
-    margin-right: 15px;
+    opacity: 0;
+    margin-right: 20px;
     max-width: 500px;
+    animation: footer-header 0.8s forwards;
 
     @include m($xl) {
       max-width: 400px;

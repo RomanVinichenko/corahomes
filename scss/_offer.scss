@@ -16,7 +16,9 @@
   &__item {
     display: flex;
     justify-content: space-between;
+    opacity: 0;
     margin-bottom: 160px;
+    animation: footer-header 0.8s forwards;
 
     @include m($xl) {
       margin-bottom: 120px;
@@ -120,9 +122,11 @@
   &__description {
     display: flex;
     justify-content: space-between;
+    opacity: 0;
     margin-bottom: 60px;
     padding-bottom: 60px;
     border-bottom: 1px solid rgba(#fff, 0.2);
+    animation: footer-header 0.8s forwards;
 
     p {
       margin-left: 20px;
@@ -157,7 +161,9 @@
 }
 
 .offer-slide {
+  opacity: 0;
   padding-bottom: 120px;
+  animation: footer-header 0.8s forwards;
 
   .swiper {
     margin-right: auto;
@@ -295,5 +301,24 @@
         content: url("../images/swiper-arrow-left.svg");
       }
     }
+  }
+}
+
+.homes-fs-map-block {
+  opacity: 0;
+  margin: 0 0 110px;
+  animation: footer-header 0.8s forwards;
+
+  iframe {
+    width: 100%;
+    height: 649px;
+  }
+
+  @include m($xl) {
+    margin: 0 0 100px;
+  }
+
+  @include m($lg) {
+    margin: 0 0 80px;
   }
 }

@@ -1,5 +1,7 @@
 .benefits {
+  opacity: 0;
   padding: 120px 0;
+  animation: fade 0.9s forwards;
 
   h2 {
     margin-bottom: 40px;
@@ -73,8 +75,10 @@
   }
 
   &__img {
+    opacity: 0;
     min-height: 139px;
     max-height: 623px;
+    animation: fade 0.9s forwards;
 
     img {
       width: 100%;
@@ -111,7 +115,9 @@
 }
 
 .position {
+  opacity: 0;
   padding: 120px 0;
+  animation: fade 1s forwards;
 
   h2 {
     margin-bottom: 40px;
@@ -150,6 +156,8 @@
     display: grid;
     grid-gap: 48px;
     grid-template-columns: 1fr 1fr 1fr;
+    opacity: 0;
+    animation: fade 1.2s forwards;
 
     li {
       height: 291px;
@@ -193,6 +201,8 @@
             }
 
             svg {
+              transform: translateX(0);
+
               path {
                 fill: #fbd394;
               }
@@ -275,9 +285,11 @@
   }
 
   &__link {
+    position: relative;
     display: flex;
     align-items: center;
     height: 24px;
+    min-width: 116px;
 
     h5 {
       padding-top: 2px;
@@ -285,7 +297,12 @@
     }
 
     svg {
+      position: absolute;
+      right: 0;
+      top: 0;
       margin-left: 8px;
+      transform: translateX(-8px);
+      transition: all 0.3s;
 
       path {
         transition: fill 0.3s;
