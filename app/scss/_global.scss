@@ -765,3 +765,9 @@ h5 {
     transform: translateY(0);
   }
 }
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
