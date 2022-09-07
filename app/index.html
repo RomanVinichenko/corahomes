@@ -48,7 +48,9 @@
   <section class="hero">
     <img class="hero__img" src="images/hero.jpg" alt="Hero">
     <div class="container">
-      <h1>Boutique Custom Homes To Fit Your Lifestyle</h1>
+      <div class="headings">
+        <h1>Boutique Custom Homes To Fit Your Lifestyle</h1>
+      </div>
       <div class="hero__present">
         <ul>
           <li>
@@ -74,7 +76,8 @@
   </section>
   <section class="we">
     <div class="container">
-      <h2>WHO WE ARE</h2>
+      <h2 class="wow">WHO WE ARE</h2>
+      <div class="we__text wow">
       <p>Design and form blend seamlessly in a way that creates a setting unique to a TriCrest Home. The amount of time
         and effort that goes into one of our modern custom homes is evident when we walk our new homeowner’s through for
         the first time. To see their eyes open wide and the excitement of watching them envision their new life in their
@@ -87,37 +90,38 @@
         We take a pragmatic approach to design, offering our clients options that fit within their budget, and creating
         dramatic features to each living space. Ask about our custom luxury homes in Northern
       </p>
-      <img src="images/we.jpg" alt="Img">
+        </div>
+      <img class="wow" src="images/we.jpg" alt="Img">
     </div>
   </section>
   <section class="gallery">
     <div class="container">
-      <h2>Portfolio</h2>
+      <h2 class="wow">Portfolio</h2>
       <div class="gallery__list">
-        <a data-fancybox="gallery" class="gallery__small" rel="gallery1" href="images/portfolio-home.jpg">
+        <a data-fancybox="gallery" class="wow gallery__small" rel="gallery1" href="images/portfolio-home.jpg">
           <img src="images/portfolio-home.jpg" alt="img"/>
         </a>
-        <a data-fancybox="gallery" class="gallery__big" rel="gallery1" href="images/portfolio-home.jpg">
+        <a data-fancybox="gallery" class="wow gallery__big" rel="gallery1" href="images/portfolio-home.jpg">
           <img src="images/portfolio-home.jpg" alt="img"/>
         </a>
-        <a data-fancybox="gallery" class="gallery__medium gallery__medium--first" rel="gallery1"
+        <a data-fancybox="gallery" class="wow gallery__medium gallery__medium--first" rel="gallery1"
            href="images/portfolio-home.jpg">
           <img src="images/portfolio-home.jpg" alt="img"/>
         </a>
-        <a data-fancybox="gallery" class="gallery__medium gallery__medium--second" rel="gallery1"
+        <a data-fancybox="gallery" class="wow gallery__medium gallery__medium--second" rel="gallery1"
            href="images/portfolio-home.jpg">
           <img src="images/portfolio-home.jpg" alt="img"/>
         </a>
-        <a data-fancybox="gallery" class="gallery__big gallery__big--revert" rel="gallery1"
+        <a data-fancybox="gallery" class="wow gallery__big gallery__big--revert" rel="gallery1"
            href="images/portfolio-home.jpg">
           <img src="images/portfolio-home.jpg" alt="img"/>
         </a>
-        <a data-fancybox="gallery" class="gallery__small gallery__small--revert" rel="gallery1"
+        <a data-fancybox="gallery" class="wow gallery__small gallery__small--revert" rel="gallery1"
            href="images/portfolio-home.jpg">
           <img src="images/portfolio-home.jpg" alt="img"/>
         </a>
       </div>
-      <a class="rv-button rv-explore" href="#">
+      <a class="rv-button rv-explore wow" href="#">
         <p>
           Explore more
         </p>
@@ -126,13 +130,14 @@
   </section>
   <section class="sale">
     <div class="container">
-      <h2>For sale</h2>
-      <p class="sale__descr">Design and form blend seamlessly in a way that creates a setting unique to a TriCrest Home.
+      <h2 class="wow">For sale</h2>
+      <p class="sale__descr wow">Design and form blend seamlessly in a way that creates a setting unique to a TriCrest
+        Home.
         The amount of time
         and effort that goes into one of our modern custom homes is evident when we walk our new homeowner’s through for
         the first time.</p>
       <ul>
-        <li>
+        <li class="wow">
           <a href="#">
             <div class="sale__img">
               <img src="images/sales-slide.jpg" alt="Sale">
@@ -170,7 +175,7 @@
             </div>
           </a>
         </li>
-        <li>
+        <li class="wow">
           <a href="#">
             <div class="sale__img">
               <img src="images/sale2.jpg" alt="Sale">
@@ -205,7 +210,7 @@
             </div>
           </a>
         </li>
-        <li>
+        <li class="wow">
           <a href="#">
             <div class="sale__img">
               <img src="images/sale3.jpg" alt="Sale">
@@ -243,7 +248,7 @@
           </a>
         </li>
       </ul>
-      <a class="rv-button rv-green" href="#">
+      <a class="rv-button rv-green wow" href="#">
         <p>See all</p>
       </a>
     </div>
@@ -348,17 +353,24 @@
       York, NY 10022</p>
   </div>
 </footer>
-<div class="cookie">
-  <img src="images/cookie.svg" alt="Cookie">
-  <p class="cookie__text">Our website uses cookies and other similar technologies to provide the best possible experience.</p>
-  <a class="rv-button rv-gold" href="#">
-    <p>
-      Accept
-    </p>
-  </a>
-</div>
+<!--<div class="cookie">-->
+<!--  <img src="images/cookie.svg" alt="Cookie">-->
+<!--  <p class="cookie__text">Our website uses cookies and other similar technologies to provide the best possible experience.</p>-->
+<!--  <a class="rv-button rv-gold" href="#">-->
+<!--    <p>-->
+<!--      Accept-->
+<!--    </p>-->
+<!--  </a>-->
+<!--</div>-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js?ver=6.0.2"></script>
+<script src="js/wow.min.js"></script>
+<script>
+  $(document).ready(function () {
+    new WOW().init();
+  });
+</script>
 <script src='js/swiper-bundle.min.js'></script>
 <script src='js/main.js'></script>
 </body>

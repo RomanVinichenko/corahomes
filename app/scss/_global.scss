@@ -733,3 +733,35 @@ h5 {
     opacity: 1;
   }
 }
+
+@keyframes header {
+  0% {
+    opacity: 0;
+    transform: translateY(-115px);
+  }
+
+  35% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-big {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  35% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
