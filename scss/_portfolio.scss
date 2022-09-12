@@ -11,16 +11,52 @@
       min-height: 216px;
 
       a {
+        position: relative;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
         height: 100%;
 
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(#000, 0.6);
+          transition: all 0.3s;
+        }
+
+        &::after {
+          content: url("../images/sale-size.svg");
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          opacity: 0;
+          width: 20px;
+          height: 20px;
+          filter: grayscale(1);
+          transform: translate(-50%, -50%) scale(1.8);
+          transition: all 0.3s;
+        }
+
         img {
           width: 100%;
           height: 100%;
           object-fit: cover;
+        }
+
+        &:hover {
+          &::before {
+            opacity: 1;
+          }
+
+          &::after {
+            opacity: 1;
+          }
         }
       }
 

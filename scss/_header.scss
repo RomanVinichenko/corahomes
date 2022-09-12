@@ -12,6 +12,11 @@
 
   .logo {
     z-index: 20;
+    transition: all 0.3s;
+
+    img {
+      transition: all 0.3s;
+    }
 
     @include m($lg) {
       max-width: 188px;
@@ -23,7 +28,31 @@
     background-color: #324541;
 
     .menu {
+      padding: 17px 0;
       border-bottom: 1px solid transparent;
+
+      ul {
+        li {
+          a {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .rv-button {
+      padding: 0 28px;
+      min-height: 45px;
+
+      p {
+        font-size: 14px !important;
+      }
+    }
+
+    .logo {
+      img {
+        max-width: 190px;
+      }
     }
   }
 }

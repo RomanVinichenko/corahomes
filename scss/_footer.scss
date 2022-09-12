@@ -46,6 +46,19 @@
     color: rgba(255, 255, 255, 0.4);
   }
 
+  &__copy-comp {
+    margin-top: 8px;
+
+    a {
+      display: inline-block;
+      transition: all 0.3s;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
   &__menu {
     p {
       margin-bottom: 24px;
@@ -116,8 +129,33 @@
   &__social {
     display: flex;
 
-    a + a {
-      margin-left: 24px;
+    a {
+      position: relative;
+      width: 24px;
+      height: 24px;
+
+      + a {
+        margin-left: 24px;
+      }
+
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 0.3s;
+
+        &:last-child {
+          opacity: 0;
+        }
+      }
+
+      &:hover {
+        img {
+          &:last-child {
+            opacity: 1;
+          }
+        }
+      }
     }
   }
 
