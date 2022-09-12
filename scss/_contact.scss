@@ -27,7 +27,23 @@
   &__info {
     opacity: 0;
     margin-right: 20px;
-    animation: fade 0.8s forwards;
+    animation: footer-header 0.8s forwards;
+
+    a {
+      transition: all 0.3s;
+
+      &:hover {
+        color: #fbd394;
+      }
+
+      &:active {
+        color: #5e857a;
+      }
+
+      &:disabled {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
 
     @include m($lg) {
       margin-right: 0;
@@ -77,19 +93,7 @@
     }
   }
 
-  &__social {
-    display: flex;
-
-    a {
-      &:not(:last-child) {
-        margin-right: 24px;
-      }
-    }
-
-    img {
-      opacity: 0.3;
-    }
-
+  .footer__social {
     @include m($lg) {
       justify-content: center;
       margin-bottom: 48px;
@@ -101,7 +105,7 @@
     width: 100%;
     height: 468px;
     max-width: 885px;
-    animation: fade 0.8s forwards;
+    animation: footer-header 0.8s forwards;
 
     iframe {
       width: 100%;
