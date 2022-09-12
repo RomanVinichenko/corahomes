@@ -47,7 +47,11 @@
     }
 
     @include m($md) {
-      bottom: 48px;
+      bottom: 40px;
+    }
+
+    @include m($sm) {
+      bottom: 25px;
     }
   }
 
@@ -73,11 +77,20 @@
     }
 
     @include m($xl) {
+      margin-bottom: 20px;
       font-size: 54px;
     }
 
     @include m($lg) {
       font-size: 45px;
+    }
+
+    @include m($md) {
+      text-align: left;
+    }
+
+    @include m($sm) {
+      font-size: 38px;
     }
   }
 
@@ -120,7 +133,11 @@
         }
 
         @include m($md) {
-          padding-left: 56px;
+          padding-left: 48px;
+        }
+
+        @include m($sm) {
+          padding-left: 44px;
         }
       }
 
@@ -133,8 +150,12 @@
       }
 
       @include m($md) {
-        grid-gap: 48px 0;
+        grid-gap: 34px 0;
         grid-template-columns: 1fr;
+      }
+
+      @include m($sm) {
+        grid-gap: 28px 0;
       }
     }
 
@@ -151,6 +172,14 @@
 
     @include m($lg) {
       padding: 24px;
+    }
+
+    @include m($md) {
+      padding: 20px;
+    }
+
+    @include m($sm) {
+      padding: 16px;
     }
   }
 }
@@ -455,10 +484,6 @@
 
     @include m($lg) {
       filter: blur(40px);
-    }
-
-    @include m($md) {
-      display: none;
     }
   }
 
