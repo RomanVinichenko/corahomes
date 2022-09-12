@@ -83,8 +83,8 @@
 
   &__present {
     opacity: 0;
-    margin-left: 48px;
-    padding: 48px;
+    margin-left: 35px;
+    padding: 38px;
     width: 100%;
     height: fit-content;
     max-width: 885px;
@@ -125,7 +125,7 @@
       }
 
       @include m(1600) {
-        grid-gap: 0 32px;
+        grid-gap: 0 28px;
       }
 
       @include m($lg) {
@@ -139,15 +139,14 @@
     }
 
     @include m(1600) {
-      padding: 32px;
-    }
-
-    @include m(1385) {
       margin-left: 32px;
+      padding: 28px;
+      max-width: 720px;
     }
 
     @include m(1290) {
       margin: 0 auto;
+      max-width: 885px;
     }
 
     @include m($lg) {
@@ -558,7 +557,7 @@
         }
 
         .sale__link {
-          opacity: 1;
+          //opacity: 1;
         }
 
         .sale__img {

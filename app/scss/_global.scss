@@ -38,9 +38,13 @@ body {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
   width: 100%;
-  max-width: 1582px;
+  max-width: 1592px;
+
+  @include m($md) {
+    padding: 0 15px;
+  }
 }
 
 h1 {

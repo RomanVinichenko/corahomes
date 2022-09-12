@@ -322,3 +322,11 @@
     margin: 0 0 80px;
   }
 }
+
+.custom-offer {
+  padding: 0 0 120px;
+
+  @include m($lg) {
+    padding: 0 0 80px;
+  }
+}

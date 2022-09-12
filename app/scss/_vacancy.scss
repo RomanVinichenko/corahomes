@@ -67,7 +67,7 @@
     display: flex;
     align-items: center;
     opacity: 0;
-    padding-left: 32px;
+    padding-left: 40px;
     width: fit-content;
     height: 24px;
     font-size: 14px;
@@ -77,10 +77,17 @@
     &::after {
       content: url("../images/arrow-left.svg");
       position: absolute;
-      left: 0;
+      left: 8px;
       top: -1px;
       width: 24px;
       height: 24px;
+      transition: all 0.3s;
+    }
+
+    &:hover {
+      &::after {
+        left: 0;
+      }
     }
   }
 
