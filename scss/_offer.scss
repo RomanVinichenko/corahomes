@@ -158,6 +158,10 @@
       flex-direction: column;
     }
   }
+
+  @include m($md) {
+    padding: 144px 0 0;
+  }
 }
 
 .offer-slide {
