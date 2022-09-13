@@ -144,14 +144,14 @@
         top: 0;
         transition: all 0.3s;
 
-        &:last-child {
+        &:last-of-type {
           opacity: 0;
         }
       }
 
       &:hover {
         img {
-          &:last-child {
+          &:last-of-type {
             opacity: 1;
           }
         }
