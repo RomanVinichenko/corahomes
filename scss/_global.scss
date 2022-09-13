@@ -285,10 +285,21 @@ h5 {
   opacity: 0;
   animation: footer-header 0.5s forwards;
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 440px;
+    background-color: rgba(#000, 0.6);
+  }
+
   .container {
     position: absolute;
     left: 50%;
     bottom: 120px;
+    z-index: 10;
     transform: translateX(-50%);
   }
 
@@ -299,6 +310,7 @@ h5 {
   }
 
   h1 {
+    z-index: 10;
     opacity: 0;
     animation: fade 0.8s forwards;
 
@@ -448,16 +460,11 @@ h5 {
       color: #d0d0d0;
       background-color: transparent;
     }
-
-    @include m($md) {
-      height: 40px;
-      min-height: 40px;
-    }
   }
 
   textarea {
     width: 100%;
-    height: 34px;
+    min-height: 34px;
     outline: none;
     border-top: none;
     border-right: none;
@@ -666,18 +673,18 @@ h5 {
 
   .home-page-popup-close {
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 15px;
+    top: 15px;
+    z-index: 5;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 15px;
-    height: 15px;
-    transform: scale(2.7);
+    width: 40px;
+    height: 40px;
 
-    @include m($lg) {
-      right: 10px;
-      top: 10px;
+    svg {
+      width: 40px;
+      height: 40px;
     }
   }
 
