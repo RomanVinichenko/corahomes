@@ -345,6 +345,10 @@ h5 {
         padding: 0;
         max-height: 51px;
       }
+
+      @include m($lg) {
+        padding: 12px 0 15px;
+      }
     }
 
     @include m($lg) {
@@ -366,6 +370,10 @@ h5 {
 
   h2 {
     margin-bottom: 16px;
+
+    @include m($lg) {
+      margin-bottom: 10px;
+    }
   }
 
   &__text {
@@ -376,7 +384,7 @@ h5 {
       padding: 0;
 
       @include m($lg) {
-        margin-bottom: 38px;
+        margin-bottom: 20px;
       }
     }
 
@@ -463,9 +471,10 @@ h5 {
   }
 
   textarea {
+    padding: 0 !important;
     width: 100%;
-    height: auto !important;
-    min-height: 34px;
+    min-height: 60px;
+    max-height: 120px;
     outline: none;
     border-top: none;
     border-right: none;
@@ -489,6 +498,10 @@ h5 {
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #5e857a;
+    }
+
+    @include m($lg) {
+      max-height: 90px;
     }
   }
 
