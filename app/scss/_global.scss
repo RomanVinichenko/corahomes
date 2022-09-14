@@ -498,10 +498,18 @@ h5 {
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #5e857a;
+
+      @include m($sm) {
+        font-size: 14px;
+      }
     }
 
     @include m($lg) {
       max-height: 90px;
+    }
+
+    @include m($sm) {
+      font-size: 14px;
     }
   }
 
@@ -558,6 +566,15 @@ h5 {
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #5e857a;
+
+      @include m($sm) {
+        font-size: 14px;
+      }
+    }
+
+    @include m($sm) {
+      padding: 3px 0 8px;
+      font-size: 14px;
     }
   }
 
@@ -666,6 +683,10 @@ h5 {
       flex-direction: column;
       padding: 40px 24px;
     }
+
+    @include m($md) {
+      padding: 44px 15px 40px;
+    }
   }
 
   .home-page-popup-left {
@@ -674,6 +695,12 @@ h5 {
     max-width: 500px;
     animation: footer-header 0.8s forwards;
 
+    p {
+      @include m($sm) {
+        font-size: 14px;
+      }
+    }
+
     @include m($xl) {
       max-width: 400px;
     }
@@ -681,6 +708,12 @@ h5 {
     @include m($lg) {
       margin-right: 0;
       margin-bottom: 20px;
+      max-width: 100%;
+    }
+
+    @include m($sm) {
+      margin-right: 0;
+      margin-bottom: 14px;
       max-width: 100%;
     }
   }
@@ -708,6 +741,10 @@ h5 {
     @include m($lg) {
       margin-bottom: 10px;
       font-size: 30px;
+    }
+
+    @include m($sm) {
+      font-size: 220px;
     }
   }
 
