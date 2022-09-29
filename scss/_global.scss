@@ -166,6 +166,7 @@ h5 {
 
   p {
     margin: 0;
+    width: max-content;
     height: 15px;
     font-family: "Causten-600", sans-serif;
     font-weight: 600;
@@ -343,7 +344,6 @@ h5 {
       &:last-of-type {
         margin-top: 18px;
         padding: 0;
-        max-height: 51px;
 
         @include m($lg) {
           margin-top: 10px;
@@ -473,8 +473,6 @@ h5 {
   textarea {
     padding: 0 !important;
     width: 100%;
-    min-height: 60px;
-    max-height: 120px;
     outline: none;
     border-top: none;
     border-right: none;
@@ -489,6 +487,7 @@ h5 {
     text-transform: uppercase;
     color: #fff;
     background-color: transparent;
+    resize: none;
 
     &::placeholder {
       font-family: "Causten-600", sans-serif;
@@ -857,4 +856,16 @@ input[type="button"],
 input[type="submit"] {
   appearance: none !important;
   border-radius: 0 !important;
+}
+
+.wpcf7-form {
+  label {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.1;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #5e857a;
+  }
 }
