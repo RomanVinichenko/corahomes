@@ -373,13 +373,14 @@ h5 {
       padding: 30px 0 16px;
       height: 70px;
       border-bottom: 1px solid #5e857a;
+      cursor: pointer;
 
       @include m($lg) {
         margin-bottom: 30px;
       }
     }
 
-    .form-file-span {
+    #form-file-span {
       height: 24px;
       font-family: "Causten-600", sans-serif;
       font-weight: 600;
