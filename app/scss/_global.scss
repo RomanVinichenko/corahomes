@@ -413,7 +413,7 @@ h5 {
       line-height: 24px;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #fff;
+      color: #ededed;
       background-color: transparent;
       resize: none;
 
@@ -451,7 +451,7 @@ h5 {
       line-height: 24px;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #fff;
+      color: #ededed;
       background-color: transparent;
 
       &::placeholder {
@@ -526,7 +526,7 @@ h5 {
       height: 50px;
       min-height: 50px;
       border: 1px solid #f3d697;
-      border-radius: 4px;
+      border-radius: 4px !important;
       font-family: "Causten-600", sans-serif;
       font-weight: 600;
       font-size: 16px;
@@ -544,9 +544,9 @@ h5 {
       }
 
       &:active {
-        border: 1px solid #f3d697;
-        color: #5e857a;
-        background-color: #ffe4b9;
+        border: 1px solid #f3d697 !important;
+        color: #5e857a !important;
+        background-color: #ffe4b9 !important;
       }
 
       &:disabled {
@@ -887,11 +887,11 @@ h5 {
 select,
 textarea,
 input[type="text"],
-input[type="submit"] {
+input[type="button"] {
   appearance: none !important;
   border-radius: 0 !important;
 }
 
-input[type="button"] {
+input[type="submit"] {
   border-radius: 0;
 }
