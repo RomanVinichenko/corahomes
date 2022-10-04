@@ -329,31 +329,9 @@ h5 {
   margin-bottom: 120px;
   animation: fade 0.8s forwards;
 
-  #form-file-span {
-    padding: 0 24px 12px 0;
-    border-bottom: 1px solid #5e857a;
-  }
-
   &__form {
     width: 100%;
     max-width: 656px;
-
-    p {
-      padding: 15px 0 18px;
-
-      &:last-of-type {
-        margin-top: 18px;
-        padding: 0;
-
-        @include m($lg) {
-          margin-top: 10px;
-        }
-      }
-
-      @include m($lg) {
-        padding: 12px 0 15px;
-      }
-    }
 
     @include m($lg) {
       max-width: 100%;
@@ -380,17 +358,80 @@ h5 {
     margin-right: 30px;
     max-width: 545px;
 
-    p {
-      padding: 0;
+    @include m($lg) {
+      margin-right: 0;
+      margin-bottom: 40px;
+      max-width: 100%;
+    }
+  }
 
-      @include m($lg) {
-        margin-bottom: 40px;
+  .wpcf7-form {
+    label {
+      position: relative;
+      margin-bottom: 48px;
+      height: 34px;
+
+      span {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+
+      textarea {
+        height: 40px;
+      }
+
+      &:last-child {
+        height: 40px;
       }
     }
 
-    @include m($lg) {
-      margin-right: 0;
-      max-width: 100%;
+    .dad-active-input {
+      .cora-label-text {
+        transform: translateY(20px) scale(0.8);
+      }
+    }
+
+    br {
+      display: none;
+    }
+
+    input {
+      padding: 3px 0 12px;
+      width: 100%;
+      outline: none;
+      border-top: none;
+      border-right: none;
+      border-bottom: 1px solid #5e857a;
+      border-left: none;
+      border-radius: 0 !important;
+      font-family: "Causten-600", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 1.1;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: transparent;
+
+      &::placeholder {
+        font-family: "Causten-600", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.1;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #5e857a;
+
+        @include m($sm) {
+          font-size: 14px;
+        }
+      }
+
+      @include m($sm) {
+        padding: 3px 0 8px;
+        font-size: 14px;
+      }
     }
   }
 
@@ -427,12 +468,6 @@ h5 {
     }
   }
 
-  label {
-    br {
-      display: none;
-    }
-  }
-
   .form-submit {
     display: flex;
     align-items: center;
@@ -445,7 +480,7 @@ h5 {
     font-family: "Causten-600", sans-serif;
     font-weight: 600;
     font-size: 16px;
-    line-height: 110%;
+    line-height: 1.1;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #fbd394;
@@ -537,44 +572,6 @@ h5 {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #fd4f4f;
-  }
-
-  input {
-    padding: 3px 0 12px;
-    width: 100%;
-    outline: none;
-    border-top: none;
-    border-right: none;
-    border-bottom: 1px solid #5e857a;
-    border-left: none;
-    border-radius: 0 !important;
-    font-family: "Causten-600", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.1;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: transparent;
-
-    &::placeholder {
-      font-family: "Causten-600", sans-serif;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 1.1;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: #5e857a;
-
-      @include m($sm) {
-        font-size: 14px;
-      }
-    }
-
-    @include m($sm) {
-      padding: 3px 0 8px;
-      font-size: 14px;
-    }
   }
 
   @include m($xl) {
@@ -856,16 +853,4 @@ input[type="button"],
 input[type="submit"] {
   appearance: none !important;
   border-radius: 0 !important;
-}
-
-.wpcf7-form {
-  label {
-    margin-bottom: 15px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 1.1;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #5e857a;
-  }
 }
