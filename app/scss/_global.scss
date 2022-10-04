@@ -374,26 +374,21 @@ h5 {
       height: 70px;
       border-bottom: 1px solid #5e857a;
 
-      &:last-of-type {
-        margin-bottom: 54px;
-        padding: 30px 0 0;
-
-        .wpcf7-form-control-wrap {
-          height: 40px;
-        }
-
-        .wpcf7-not-valid-tip {
-          bottom: -24px;
-        }
-
-        @include m($lg) {
-          margin-bottom: 46px;
-        }
-      }
-
       @include m($lg) {
         margin-bottom: 30px;
       }
+    }
+
+    .form-file-span {
+      height: 24px;
+      font-family: "Causten-600", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #5e857a;
+      cursor: pointer;
     }
 
     textarea {
@@ -417,20 +412,6 @@ h5 {
       background-color: transparent;
       resize: none;
 
-      &::placeholder {
-        font-family: "Causten-600", sans-serif;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1.1;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #5e857a;
-
-        @include m($sm) {
-          font-size: 14px;
-        }
-      }
-
       @include m($sm) {
         font-size: 14px;
       }
@@ -453,20 +434,6 @@ h5 {
       text-transform: uppercase;
       color: #ededed;
       background-color: transparent;
-
-      &::placeholder {
-        font-family: "Causten-600", sans-serif;
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 1.1;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #5e857a;
-
-        @include m($sm) {
-          font-size: 14px;
-        }
-      }
 
       @include m($sm) {
         padding: 3px 0 8px;
