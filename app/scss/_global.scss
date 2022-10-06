@@ -768,6 +768,32 @@ h5 {
   }
 }
 
+.hfs-video-section {
+  margin: 60px 0 120px;
+  animation: fade 0.8s forwards;
+
+  iframe {
+    max-height: 841px;
+
+    @include m($lg) {
+      max-height: 500px;
+    }
+  }
+
+  .rv-video {
+    margin-top: 120px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+    @include m($lg) {
+      margin-top: 60px;
+    }
+  }
+
+  @include m($lg) {
+    margin: 20px 0 60px;
+  }
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
