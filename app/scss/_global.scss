@@ -794,15 +794,24 @@ h5 {
 .cmplz-document {
   padding: 234px 0 120px;
 
+  h1 {
+    margin-bottom: 15px;
+  }
+
+  .cmplz-subtitle {
+    font-size: 20px !important;
+  }
+
   h2 {
-    font-size: 26px;
+    padding-bottom: 0 !important;
+    font-size: 26px !important;
     line-height: 1.4;
   }
 
   a {
     font-family: "Causten", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 18px !important;
     line-height: 1.4;
     letter-spacing: 0.04em;
     color: #fff;
@@ -827,7 +836,7 @@ h5 {
   }
 
   ul {
-    list-style: none;
+    list-style: none !important;
 
     li {
       position: relative;
@@ -851,13 +860,23 @@ h5 {
   }
 }
 
+.purpose,
+.retention-header {
+  background-color: transparent !important;
+}
+
 .cmplz-document {
   padding: 0;
 }
 
+.cmplz-service-header {
+  color: #f3d697;
+  background-color: #fff !important;
+}
+
 .cmplz-category-header {
   color: #f3d697;
-  background-color: #fff;
+  background-color: #fff !important;
 }
 
 @keyframes fade {
