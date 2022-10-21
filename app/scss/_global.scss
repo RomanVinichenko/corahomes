@@ -980,6 +980,29 @@ h5 {
   background-color: transparent !important;
 }
 
+.about_title {
+  margin-right: 40px;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 1.2;
+  letter-spacing: 0.015em;
+  text-transform: uppercase;
+  color: #fff;
+
+  @include m($lg) {
+    margin-right: 0;
+  }
+}
+
+.section_item {
+  width: 100%;
+  max-width: 884px;
+
+  @include m($lg) {
+    max-width: 100%;
+  }
+}
+
 @keyframes fade {
   0% {
     opacity: 0;
