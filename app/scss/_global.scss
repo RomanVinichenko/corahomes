@@ -783,15 +783,81 @@ h5 {
   .rv-video {
     margin-top: 52px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-
-    @include m($lg) {
-      //margin-top: 52px;
-    }
   }
 
   @include m($lg) {
     margin: 20px 0 60px;
   }
+}
+
+.page_main_section,
+.cmplz-document {
+  padding: 234px 0 120px;
+
+  h2 {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+
+  a {
+    font-family: "Causten", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: #fff;
+  }
+
+  input {
+    border: none;
+    background-color: transparent;
+  }
+
+  p {
+    font-family: "Causten", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: #fff;
+
+    &:not(:last-child) {
+      margin-bottom: 24px;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    li {
+      position: relative;
+      padding-left: 28px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 3px;
+        height: 3px;
+        border-radius: 50%;
+        background-color: #fff;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.cmplz-document {
+  padding: 0;
+}
+
+.cmplz-category-header {
+  color: #f3d697;
+  background-color: #fff;
 }
 
 @keyframes fade {
