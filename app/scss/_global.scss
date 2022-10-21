@@ -768,6 +768,18 @@ h5 {
   }
 }
 
+.cmplz-dropdown .cmplz-service-desc .cmplz-dropdown-cookiepolicy {
+  background-color: #f3d697 !important;
+}
+
+.cookies-per-purpose {
+  background-color: transparent !important;
+
+  div {
+    background-color: transparent !important;
+  }
+}
+
 .hfs-video-section {
   margin: 60px 0 120px;
   animation: fade 0.8s forwards;
@@ -790,7 +802,8 @@ h5 {
   }
 }
 
-.cmplz-datarequest-submit {
+#cmplz-datarequest-submit {
+  margin-top: 10px;
   padding: 0 20px;
   height: 40px;
   color: #fff !important;
@@ -798,12 +811,23 @@ h5 {
 }
 
 .cmplz-category-title {
+  font-family: "Causten-600", sans-serif;
+  font-weight: 600;
+  font-size: 18px !important;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: #fff !important;
 }
 
 .page_main_section,
 #cmplz-document {
   padding: 234px 0 120px;
+  font-family: "Causten", sans-serif;
+
+  a {
+    width: fit-content !important;
+  }
 
   h1 {
     margin-bottom: 15px;
@@ -812,7 +836,7 @@ h5 {
   .cmplz-subtitle {
     margin-top: 24px !important;
     margin-bottom: 24px !important;
-    font-size: 20px !important;
+    font-size: 24px !important;
   }
 
   h2 {
@@ -832,7 +856,17 @@ h5 {
     color: #fff;
   }
 
+  label {
+    margin-right: 5px;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: #fff !important;
+  }
+
   input {
+    outline: none !important;
     border: 1px solid #fff;
     font-family: "Causten", sans-serif;
     font-weight: 400;
@@ -871,7 +905,8 @@ h5 {
     padding-left: 20px !important;
   }
 
-  ul {
+  ul,
+  ol {
     margin-top: 24px;
     margin-bottom: 24px;
     margin-left: 0 !important;
@@ -879,7 +914,7 @@ h5 {
 
     li {
       position: relative;
-      padding-left: 28px;
+      padding-left: 20px;
       font-family: "Causten", sans-serif;
       font-weight: 400;
       font-size: 18px !important;
@@ -890,7 +925,7 @@ h5 {
       &::after {
         content: "";
         position: absolute;
-        left: 10px;
+        left: 4px;
         top: 10px;
         width: 3px;
         height: 3px;
