@@ -790,8 +790,19 @@ h5 {
   }
 }
 
+.cmplz-datarequest-submit {
+  padding: 0 20px;
+  height: 40px;
+  color: #fff !important;
+  background-color: transparent !important;
+}
+
+.cmplz-category-title {
+  color: #fff !important;
+}
+
 .page_main_section,
-.cmplz-document {
+#cmplz-document {
   padding: 234px 0 120px;
 
   h1 {
@@ -799,10 +810,14 @@ h5 {
   }
 
   .cmplz-subtitle {
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
     font-size: 20px !important;
   }
 
   h2 {
+    margin-top: 24px !important;
+    margin-bottom: 10px;
     padding-bottom: 0 !important;
     font-size: 26px !important;
     line-height: 1.4;
@@ -818,14 +833,31 @@ h5 {
   }
 
   input {
-    border: none;
+    border: 1px solid #fff;
+    font-family: "Causten", sans-serif;
+    font-weight: 400;
+    font-size: 18px !important;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: #fff !important;
     background-color: transparent;
+
+    &::placeholder {
+      border: 1px solid #fff;
+      font-family: "Causten", sans-serif;
+      font-weight: 400;
+      font-size: 18px !important;
+      line-height: 1.4;
+      letter-spacing: 0.04em;
+      color: #fff !important;
+      background-color: transparent;
+    }
   }
 
   p {
     font-family: "Causten", sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 18px !important;
     line-height: 1.4;
     letter-spacing: 0.04em;
     color: #fff;
@@ -835,12 +867,25 @@ h5 {
     }
   }
 
+  ol {
+    padding-left: 20px !important;
+  }
+
   ul {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 0 !important;
     list-style: none !important;
 
     li {
       position: relative;
       padding-left: 28px;
+      font-family: "Causten", sans-serif;
+      font-weight: 400;
+      font-size: 18px !important;
+      line-height: 1.4;
+      letter-spacing: 0.04em;
+      color: #fff;
 
       &::after {
         content: "";
@@ -854,7 +899,7 @@ h5 {
       }
 
       &:not(:last-child) {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
       }
     }
   }
@@ -865,18 +910,20 @@ h5 {
   background-color: transparent !important;
 }
 
-.cmplz-document {
+#cmplz-document {
   padding: 0;
 }
 
 .cmplz-service-header {
+  border: 1px solid #fff;
   color: #f3d697;
-  background-color: #fff !important;
+  background-color: transparent !important;
 }
 
 .cmplz-category-header {
+  border: 1px solid #fff;
   color: #f3d697;
-  background-color: #fff !important;
+  background-color: transparent !important;
 }
 
 @keyframes fade {
