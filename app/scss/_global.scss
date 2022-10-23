@@ -769,7 +769,7 @@ h5 {
 }
 
 .cmplz-dropdown .cmplz-service-desc .cmplz-dropdown-cookiepolicy {
-  background-color: #f3d697 !important;
+  background-color: transparent !important;
 }
 
 .cookies-per-purpose {
@@ -824,10 +824,6 @@ h5 {
   padding: 234px 0 120px;
   font-family: "Causten", sans-serif;
 
-  a {
-    width: fit-content !important;
-  }
-
   h1 {
     margin-bottom: 15px;
   }
@@ -847,6 +843,7 @@ h5 {
   }
 
   a {
+    width: fit-content !important;
     font-family: "Causten", sans-serif;
     font-weight: 400;
     font-size: 18px !important;
@@ -962,10 +959,6 @@ h5 {
   @include m($lg) {
     padding: 0;
   }
-}
-
-.cmplz-dropdown .cmplz-service-desc .cmplz-dropdown-cookiepolicy {
-  background-color: transparent !important;
 }
 
 .cmplz-service-header {
