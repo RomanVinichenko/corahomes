@@ -825,7 +825,7 @@ h5 {
   font-family: "Causten", sans-serif;
 
   h1 {
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   .cmplz-subtitle {
@@ -836,7 +836,7 @@ h5 {
 
   h2 {
     margin-top: 24px !important;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     padding-bottom: 0 !important;
     font-size: 26px !important;
     line-height: 1.4;
@@ -898,6 +898,10 @@ h5 {
 
     br {
       display: none;
+    }
+
+    a {
+      display: inline-block;
     }
   }
 

@@ -7,6 +7,14 @@
     @include m(1400) {
       font-size: 60px;
     }
+
+    @include m($xl) {
+      font-size: 48px;
+    }
+
+    @include m($lg) {
+      font-size: 40px;
+    }
   }
 
   h1,
