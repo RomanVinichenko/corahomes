@@ -802,14 +802,6 @@ h5 {
   }
 }
 
-#cmplz-datarequest-submit {
-  margin-top: 10px;
-  padding: 0 20px;
-  height: 40px;
-  color: #fff !important;
-  background-color: transparent !important;
-}
-
 .cmplz-category-title {
   font-family: "Causten-600", sans-serif;
   font-weight: 600;
@@ -823,6 +815,8 @@ h5 {
 #cmplz-document {
   padding: 234px 0 120px;
   font-family: "Causten", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
 
   h1 {
     margin-bottom: 24px;
@@ -891,6 +885,10 @@ h5 {
     line-height: 1.4;
     letter-spacing: 0.04em;
     color: #fff;
+
+    i {
+      font-style: initial !important;
+    }
 
     &:not(:last-child) {
       margin-bottom: 24px;
@@ -982,7 +980,7 @@ h5 {
 }
 
 .about_title {
-  margin-right: 40px;
+  margin-right: 0 !important;
   font-weight: 600;
   font-size: 72px;
   line-height: 1.2;
@@ -996,6 +994,10 @@ h5 {
 }
 
 .cmplz-marketing {
+  .about_title {
+    margin-right: 0 !important;
+  }
+
   .terms {
     .terms__block {
       display: flex;
@@ -1106,7 +1108,7 @@ h5 {
   color: #18211f;
   background-color: #fbd394;
 
-  @include m(lg) {
+  @include m($lg) {
     left: 18px;
     top: 18px;
     padding: 0 13px;
@@ -1119,13 +1121,8 @@ h5 {
   background-color: transparent;
 }
 
-.cmplz-datarequest-submit {
-  border: 1px solid #fff;
-  border-radius: 4px;
-}
-
 .new-dis-img {
-  max-width: 33% !important;
+  max-width: 33.33% !important;
 
   img {
     padding: 0 !important;
@@ -1144,6 +1141,16 @@ h5 {
       height: 200px;
     }
   }
+}
+
+#cmplz-datarequest-submit {
+  margin-top: 10px;
+  padding: 0 20px;
+  height: 40px;
+  border: 1px solid #fff !important;
+  border-radius: 4px;
+  color: #fff !important;
+  background-color: transparent !important;
 }
 
 @keyframes fade {

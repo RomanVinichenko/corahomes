@@ -238,14 +238,6 @@
     &:not(:last-of-type) {
       margin-bottom: 24px;
     }
-
-    //@include m($xl) {
-    //  margin: 0 auto 80px;
-    //}
-
-    //@include m($lg) {
-    //  margin: 0 auto 40px;
-    //}
   }
 
   @include m($xl) {
@@ -310,6 +302,33 @@
     a {
       margin-bottom: 40px;
       width: 100%;
+
+      &:nth-last-child(3) {
+        opacity: 0 !important;
+        animation: fade 1.2s forwards !important;
+
+        img {
+          padding-right: 20px !important;
+        }
+      }
+
+      &:nth-last-child(2) {
+        opacity: 0 !important;
+        animation: fade 1.3s forwards !important;
+
+        img {
+          padding: 0 20px !important;
+        }
+      }
+
+      &:nth-last-child(1) {
+        opacity: 0 !important;
+        animation: fade 1.4s forwards !important;
+
+        img {
+          padding-left: 20px !important;
+        }
+      }
 
       &:first-child {
         img {
