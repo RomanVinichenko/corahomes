@@ -995,6 +995,71 @@ h5 {
   }
 }
 
+.cmplz-marketing {
+  .terms {
+    .terms__block {
+      display: flex;
+      flex-direction: column !important;
+      padding-bottom: 0 !important;
+      border-bottom: none !important;
+
+      h1 {
+        margin-right: 0;
+        margin-bottom: 24px;
+        width: 100%;
+        max-width: 100px;
+      }
+
+      #cmplz-document {
+        margin-right: 0;
+        margin-left: auto;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .terms__block {
+    display: flex;
+    flex-direction: column !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+
+    h1 {
+      margin-right: 0;
+      margin-bottom: 24px;
+      width: 100%;
+      max-width: 100px;
+    }
+
+    #cmplz-document {
+      margin-right: 0;
+      margin-left: auto;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.cmplz-document {
+  .terms__block {
+    display: flex;
+    flex-direction: column !important;
+
+    h1 {
+      margin-right: 0;
+      margin-bottom: 24px;
+      width: 100%;
+      max-width: 100px;
+    }
+
+    #cmplz-document {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
 .section_item {
   width: 100%;
   max-width: 100%;
