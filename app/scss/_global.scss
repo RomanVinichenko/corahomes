@@ -989,9 +989,10 @@ h5 {
 
 .section_item {
   width: 100%;
-  max-width: 884px;
+  max-width: 100%;
 
-  @include m($lg) {
+  .cmplz-document {
+    width: 100%;
     max-width: 100%;
   }
 }
