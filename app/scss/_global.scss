@@ -1003,6 +1003,11 @@ h5 {
       padding-bottom: 0 !important;
       border-bottom: none !important;
 
+      .terms__wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
       h1 {
         margin-right: 0;
         margin-bottom: 24px;
@@ -1080,6 +1085,22 @@ h5 {
     width: 100%;
     max-width: 100%;
   }
+}
+
+.home-sold {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  padding: 0 16px;
+  height: 34px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #18211f;
+  background-color: #fbd394;
 }
 
 @keyframes fade {
