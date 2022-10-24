@@ -1,6 +1,14 @@
 .terms {
   padding: 234px 0 120px;
 
+  h1 {
+    font-size: 68px;
+
+    @include m(1400) {
+      font-size: 60px;
+    }
+  }
+
   h1,
   h3 {
     opacity: 0;
@@ -87,6 +95,13 @@
     width: 100%;
     max-width: 884px;
     animation: fade 0.8s forwards;
+
+    #cmplz-document {
+      @include m($lg) {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
 
     @include m($lg) {
       max-width: 100%;

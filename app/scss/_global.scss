@@ -825,7 +825,7 @@ h5 {
   font-family: "Causten", sans-serif;
 
   h1 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .cmplz-subtitle {
@@ -894,6 +894,10 @@ h5 {
 
     &:not(:last-child) {
       margin-bottom: 24px;
+    }
+
+    br {
+      display: none;
     }
   }
 
@@ -992,6 +996,18 @@ h5 {
   max-width: 100%;
 
   .cmplz-document {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #cmplz-document {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.formatted_content {
+  #cmplz-document {
     width: 100%;
     max-width: 100%;
   }
