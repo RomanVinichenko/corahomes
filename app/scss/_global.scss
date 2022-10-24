@@ -1105,12 +1105,17 @@ h5 {
   text-transform: uppercase;
   color: #18211f;
   background-color: #fbd394;
+
+  @include m(lg) {
+    left: 18px;
+    top: 18px;
+    padding: 0 13px;
+    height: 30px;
+  }
 }
 
 .home-sold {
   position: absolute;
-  left: 32px;
-  top: 32px;
   background-color: transparent;
 }
 
@@ -1120,8 +1125,12 @@ h5 {
 }
 
 .new-dis-img {
+  max-width: 33% !important;
+
   img {
-    height: 474px;
+    padding: 0 !important;
+    height: 474px !important;
+    max-height: 474px;
 
     @include m($xl) {
       height: 400px;
@@ -1133,24 +1142,6 @@ h5 {
 
     @include m($md) {
       height: 200px;
-    }
-  }
-
-  &:first-child {
-    img {
-      padding-right: 20px !important;
-    }
-  }
-
-  &:last-child {
-    img {
-      padding-left: 20px !important;
-    }
-  }
-
-  &:nth-child(2) {
-    img {
-      padding: 0 20px !important;
     }
   }
 }
