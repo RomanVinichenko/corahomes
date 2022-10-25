@@ -818,6 +818,10 @@ h5 {
   font-size: 18px;
   line-height: 1.4;
 
+  br {
+    display: none;
+  }
+
   h1 {
     margin-bottom: 24px;
   }
@@ -837,12 +841,14 @@ h5 {
   }
 
   a {
+    display: inline-block;
     width: fit-content !important;
     font-family: "Causten", sans-serif;
     font-weight: 400;
     font-size: 18px !important;
     line-height: 1.4;
     letter-spacing: 0.04em;
+    text-decoration: underline;
     color: #fff;
   }
 
@@ -857,7 +863,7 @@ h5 {
 
   input {
     outline: none !important;
-    border: none !important;
+    border: none;
     font-family: "Causten", sans-serif;
     font-weight: 400;
     font-size: 18px !important;
@@ -901,10 +907,6 @@ h5 {
     a {
       display: inline-block;
     }
-  }
-
-  ol {
-    padding-left: 20px !important;
   }
 
   ul,
@@ -1119,28 +1121,6 @@ h5 {
 .home-sold {
   position: absolute;
   background-color: transparent;
-}
-
-.new-dis-img {
-  max-width: 33.33% !important;
-
-  img {
-    padding: 0 !important;
-    height: 474px !important;
-    max-height: 474px;
-
-    @include m($xl) {
-      height: 400px;
-    }
-
-    @include m($lg) {
-      height: 300px;
-    }
-
-    @include m($md) {
-      height: 200px;
-    }
-  }
 }
 
 #cmplz-datarequest-submit {

@@ -194,7 +194,7 @@
 }
 
 .we {
-  padding: 240px 0 120px;
+  padding: 120px 0;
 
   img {
     opacity: 0;
@@ -241,11 +241,11 @@
   }
 
   @include m($xl) {
-    padding: 200px 0 90px;
+    padding: 120px 0 90px;
   }
 
   @include m($lg) {
-    padding: 180px 0 60px;
+    padding: 120px 0 60px;
   }
 }
 
@@ -302,33 +302,6 @@
     a {
       margin-bottom: 40px;
       width: 100%;
-
-      &:nth-last-child(3) {
-        opacity: 0 !important;
-        animation: fade 1.2s forwards !important;
-
-        img {
-          padding-right: 20px !important;
-        }
-      }
-
-      &:nth-last-child(2) {
-        opacity: 0 !important;
-        animation: fade 1.3s forwards !important;
-
-        img {
-          padding: 0 20px !important;
-        }
-      }
-
-      &:nth-last-child(1) {
-        opacity: 0 !important;
-        animation: fade 1.4s forwards !important;
-
-        img {
-          padding-left: 20px !important;
-        }
-      }
 
       &:first-child {
         img {
