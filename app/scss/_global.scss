@@ -385,11 +385,16 @@ h5 {
       font-family: "Causten-600", sans-serif;
       font-weight: 600;
       font-size: 16px;
-      line-height: 24px;
+      line-height: 16px !important;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #5e857a;
       cursor: pointer;
+
+      @include m(400) {
+        font-size: 14px !important;
+        line-height: 12px !important;
+      }
     }
 
     textarea {
