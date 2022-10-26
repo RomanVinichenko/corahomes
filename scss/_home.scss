@@ -194,14 +194,23 @@
 }
 
 .we {
-  padding: 240px 0 120px;
+  padding: 120px 0;
 
   img {
     opacity: 0;
+    margin: 120px auto 0;
     width: 100%;
     min-height: 138px;
     object-fit: cover;
     animation: fade 1.3s forwards;
+
+    @include m($xl) {
+      margin: 80px auto 0;
+    }
+
+    @include m($lg) {
+      margin: 40px auto 0;
+    }
   }
 
   &__text {
@@ -222,29 +231,21 @@
   }
 
   p {
-    margin: 0 auto 120px;
+    margin: 0 auto;
     max-width: 1094px;
     text-align: center;
 
     &:not(:last-of-type) {
       margin-bottom: 24px;
     }
-
-    @include m($xl) {
-      margin: 0 auto 80px;
-    }
-
-    @include m($lg) {
-      margin: 0 auto 40px;
-    }
   }
 
   @include m($xl) {
-    padding: 200px 0 90px;
+    padding: 120px 0 90px;
   }
 
   @include m($lg) {
-    padding: 180px 0 60px;
+    padding: 120px 0 60px;
   }
 }
 

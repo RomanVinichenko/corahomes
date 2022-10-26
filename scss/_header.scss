@@ -149,16 +149,17 @@
     position: relative;
     display: none;
     padding: 0;
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     border: none;
     background-color: transparent;
     cursor: pointer;
 
     img {
       position: absolute;
-      left: 0;
-      top: 0;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       transition: opacity 0.2s;
 
       &:last-of-type {

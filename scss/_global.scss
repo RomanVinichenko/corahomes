@@ -802,14 +802,6 @@ h5 {
   }
 }
 
-#cmplz-datarequest-submit {
-  margin-top: 10px;
-  padding: 0 20px;
-  height: 40px;
-  color: #fff !important;
-  background-color: transparent !important;
-}
-
 .cmplz-category-title {
   font-family: "Causten-600", sans-serif;
   font-weight: 600;
@@ -823,9 +815,15 @@ h5 {
 #cmplz-document {
   padding: 234px 0 120px;
   font-family: "Causten", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+
+  br {
+    display: none;
+  }
 
   h1 {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
   }
 
   .cmplz-subtitle {
@@ -836,19 +834,21 @@ h5 {
 
   h2 {
     margin-top: 24px !important;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     padding-bottom: 0 !important;
     font-size: 26px !important;
     line-height: 1.4;
   }
 
   a {
+    display: inline-block;
     width: fit-content !important;
     font-family: "Causten", sans-serif;
     font-weight: 400;
     font-size: 18px !important;
     line-height: 1.4;
     letter-spacing: 0.04em;
+    text-decoration: underline;
     color: #fff;
   }
 
@@ -863,7 +863,7 @@ h5 {
 
   input {
     outline: none !important;
-    border: none !important;
+    border: none;
     font-family: "Causten", sans-serif;
     font-weight: 400;
     font-size: 18px !important;
@@ -892,13 +892,21 @@ h5 {
     letter-spacing: 0.04em;
     color: #fff;
 
+    i {
+      font-style: initial !important;
+    }
+
     &:not(:last-child) {
       margin-bottom: 24px;
     }
-  }
 
-  ol {
-    padding-left: 20px !important;
+    br {
+      display: none;
+    }
+
+    a {
+      display: inline-block;
+    }
   }
 
   ul,
@@ -974,7 +982,7 @@ h5 {
 }
 
 .about_title {
-  margin-right: 40px;
+  margin-right: 0 !important;
   font-weight: 600;
   font-size: 72px;
   line-height: 1.2;
@@ -987,13 +995,142 @@ h5 {
   }
 }
 
+.cmplz-marketing {
+  .about_title {
+    margin-right: 0 !important;
+  }
+
+  .terms {
+    .terms__block {
+      display: flex;
+      flex-direction: column !important;
+      padding-bottom: 0 !important;
+      border-bottom: none !important;
+
+      .terms__wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      h1 {
+        margin-right: 0;
+        margin-bottom: 24px;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100px;
+      }
+
+      #cmplz-document {
+        margin-right: 0;
+        margin-left: auto;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  .terms__block {
+    display: flex;
+    flex-direction: column !important;
+    padding-bottom: 0 !important;
+    border-bottom: none !important;
+
+    h1 {
+      margin-right: 0;
+      margin-bottom: 24px;
+      width: 100%;
+      max-width: 100px;
+    }
+
+    #cmplz-document {
+      margin-right: 0;
+      margin-left: auto;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.cmplz-document {
+  .terms__block {
+    display: flex;
+    flex-direction: column !important;
+
+    h1 {
+      margin-right: 0;
+      margin-bottom: 24px;
+      width: 100%;
+      max-width: 100px;
+    }
+
+    #cmplz-document {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
 .section_item {
   width: 100%;
-  max-width: 884px;
+  max-width: 100%;
 
-  @include m($lg) {
+  .cmplz-document {
+    width: 100%;
     max-width: 100%;
   }
+
+  #cmplz-document {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.formatted_content {
+  #cmplz-document {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.mark-house-sold {
+  position: absolute;
+  left: 32px;
+  top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  height: 34px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #18211f;
+  background-color: #fbd394;
+
+  @include m($lg) {
+    left: 18px;
+    top: 18px;
+    padding: 0 13px;
+    height: 30px;
+  }
+}
+
+.home-sold {
+  position: absolute;
+  background-color: transparent;
+}
+
+#cmplz-datarequest-submit {
+  margin-top: 10px;
+  padding: 0 20px;
+  height: 40px;
+  border: 1px solid #fff !important;
+  border-radius: 4px;
+  color: #fff !important;
+  background-color: transparent !important;
 }
 
 @keyframes fade {
