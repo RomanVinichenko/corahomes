@@ -1003,6 +1003,7 @@ h5 {
   .vacancy {
     .terms__block {
       flex-direction: row !important;
+      padding-bottom: 40px !important;
 
       h1 {
         margin-right: 40px !important;
@@ -1012,6 +1013,10 @@ h5 {
       &:not(:last-child) {
         border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
       }
+
+      @include m($lg) {
+        flex-direction: column !important;
+      }
     }
   }
 
@@ -1019,7 +1024,7 @@ h5 {
     .terms__block {
       display: flex;
       flex-direction: column;
-      padding-bottom: 0 !important;
+      padding-bottom: 0;
       border-bottom: none !important;
 
       .terms__wrapper {

@@ -12,6 +12,7 @@
 
   .logo {
     z-index: 20;
+    max-width: 240px;
     transition: all 0.3s;
 
     img {
@@ -51,7 +52,10 @@
 
     .logo {
       img {
+        width: 100%;
         max-width: 190px;
+        max-height: 40px;
+        object-fit: contain;
       }
     }
   }
