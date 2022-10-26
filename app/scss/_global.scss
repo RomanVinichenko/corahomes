@@ -1002,15 +1002,15 @@ h5 {
 
   .vacancy {
     .terms__block {
-      flex-direction: row;
+      flex-direction: row !important;
 
       h1 {
-        margin-right: 40px;
-        min-width: 420px;
+        margin-right: 40px !important;
+        min-width: 420px !important;
       }
 
       &:not(:last-child) {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
       }
     }
   }
