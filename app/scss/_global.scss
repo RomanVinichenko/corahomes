@@ -1000,10 +1000,25 @@ h5 {
     margin-right: 0 !important;
   }
 
+  .vacancy {
+    .terms__block {
+      flex-direction: row;
+
+      h1 {
+        margin-right: 40px;
+        min-width: 420px;
+      }
+
+      &:not(:last-child) {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+    }
+  }
+
   .terms {
     .terms__block {
       display: flex;
-      flex-direction: column !important;
+      flex-direction: column;
       padding-bottom: 0 !important;
       border-bottom: none !important;
 
@@ -1031,7 +1046,7 @@ h5 {
 
   .terms__block {
     display: flex;
-    flex-direction: column !important;
+    flex-direction: column;
     padding-bottom: 0 !important;
     border-bottom: none !important;
 
